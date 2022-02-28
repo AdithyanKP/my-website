@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.logo {
+  font-size: 30px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 75px;
+  background-color: #00828c;
+  color: white;
+}
+.navlinks {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  width: 75%;
+}
+.home,
+.about {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 0 10px;
+}
