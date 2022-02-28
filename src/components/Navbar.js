@@ -1,17 +1,38 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
 const Navbar = () => {
   return (
     <nav className={styles.navbar}>
-      <h2 className={styles.logo}>Adithyan</h2>
       <ul className={styles.navlinks}>
-        <Link to="/" className={styles.home}>
-          <li>Home</li>
-        </Link>
-        <Link to="/about" className={styles.about}>
-          <li>About</li>
-        </Link>
+        <li>
+          <NavLink
+            end
+            to="/"
+            style={({ isActive }) => {
+              return {
+                fontSize: isActive ? 25 : 20,
+              };
+            }}
+            className={styles.home}
+          >
+            About me
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            end
+            to="/about"
+            style={({ isActive }) => {
+              return {
+                fontSize: isActive ? 25 : 20,
+              };
+            }}
+            className={styles.about}
+          >
+            Skills
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );
