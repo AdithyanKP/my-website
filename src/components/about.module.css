@@ -1,0 +1,16 @@
+.container {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  margin-top: 160px;
+  margin-bottom: 80px;
+}
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
