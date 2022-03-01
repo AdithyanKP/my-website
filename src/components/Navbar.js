@@ -16,7 +16,7 @@ const Navbar = () => {
             }}
             className={styles.home}
           >
-            About me
+            Myself
           </NavLink>
         </li>
         <li>

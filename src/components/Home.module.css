@@ -1,0 +1,45 @@
+.container {
+  flex: 1;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.para {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.image {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+}
+.h1 {
+  display: flex;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+.linkText {
+  display: flex;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.linkContainer {
+  flex: 1;
+  margin-top: 160px;
+  align-items: center;
+  justify-content: center;
+}
+.link {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  margin-top: 30px;
+  font-size: 18px;
+}
