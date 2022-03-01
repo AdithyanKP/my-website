@@ -32,7 +32,7 @@
 }
 .linkContainer {
   flex: 1;
-  margin-top: 20px;
+  margin-top: 0px;
   align-items: center;
   justify-content: center;
 }
@@ -40,6 +40,6 @@
   display: flex;
   justify-content: center;
   align-content: space-between;
-  margin-top: 30px;
+  margin-top: 15px;
   font-size: 18px;
 }
