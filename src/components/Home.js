@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Home.module.css";
-import { Avatar, Link } from "@mui/material";
+import { Avatar } from "@mui/material";
 import image from "../assets/image.jpeg";
 
 const Home = () => {
