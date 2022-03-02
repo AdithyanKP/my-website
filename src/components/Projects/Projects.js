@@ -8,7 +8,7 @@ const Projects = () => {
       <div className={styles.imagecontainer}>
         <p className={styles.p}>Covid-19 tracker</p>
         <div>
-          <img className={styles.image} src={image}></img>
+          <img className={styles.image} src={image} alt=""></img>
         </div>
         <p className={styles.p}>
           Tech stack: React js, Axios, React Chartjs, React Hooks
