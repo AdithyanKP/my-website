@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./about.module.css";
-const About = () => {
+import styles from "./Skill.module.css";
+const Skill = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.text}>React Js ✔</h1>
@@ -11,4 +11,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Skill;

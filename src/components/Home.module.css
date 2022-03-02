@@ -23,24 +23,3 @@
   align-items: center;
   margin-top: 15px;
 }
-.linkText {
-  display: flex;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande";
-  font-size: 18px;
-  justify-content: center;
-  align-items: center;
-  margin-top: 44px;
-}
-.linkContainer {
-  flex: 1;
-  margin-top: 0px;
-  align-items: center;
-  justify-content: center;
-}
-.link {
-  display: flex;
-  justify-content: center;
-  align-content: space-between;
-  margin-top: 15px;
-  font-size: 18px;
-}

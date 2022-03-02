@@ -22,7 +22,7 @@ const Navbar = () => {
         <li>
           <NavLink
             end
-            to="/about"
+            to="/skills"
             style={({ isActive }) => {
               return {
                 fontSize: isActive ? 25 : 20,
