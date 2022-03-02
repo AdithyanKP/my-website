@@ -1,13 +1,14 @@
 .linkText {
   text-align: center;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande";
-  font-size: 22px;
+  font-size: 26px;
   color: #00828c;
-  margin: 20px;
+  margin: 10px;
+  font-weight: 700;
 }
 .linkContainer {
   flex: 1;
-  margin-top: 35px;
+  margin-top: 10px;
   align-items: center;
   justify-content: center;
 }
@@ -16,5 +17,6 @@
   justify-content: center;
   align-content: space-between;
   margin-top: 15px;
-  font-size: 18px;
+  font-size: 23px;
+  font-weight: 400;
 }
