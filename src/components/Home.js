@@ -10,8 +10,10 @@ const Home = () => {
       <div className={styles.image}>
         <Avatar alt="Remy Sharp" src={image} sx={{ width: 70, height: 70 }} />
       </div>
-      <h1 className={styles.h1}>Adithyan KP</h1>
+
       <p className={styles.para}>
+        📍Hello I am Adithyan K P
+        <br />
         📍I currently work as a software developer at Infospica consultancy and
         services😎.
         <br /> 📍I've completed my BCA graduation in 2018-2021🎓. <br />
