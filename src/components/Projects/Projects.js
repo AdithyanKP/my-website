@@ -14,7 +14,10 @@ const Projects = () => {
             <img className={styles.image} src={eplant} alt=""></img>
           </div>
 
-          <a className={styles.a} href="https://adiflix.netlify.app/">
+          <a
+            className={styles.a}
+            href="https://github.com/AdithyanKP/E-PLANT.git"
+          >
             Check it out ✔
           </a>
         </div>
