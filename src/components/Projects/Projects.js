@@ -2,7 +2,7 @@ import React from "react";
 import image from "../../assets/pic.png";
 import netfliximage from "../../assets/netflix.png";
 import eplant from "../../assets/eplant.png";
-import { Link } from "react-router-dom";
+
 import styles from "./Projects.module.css";
 import { Button } from "react-bootstrap";
 

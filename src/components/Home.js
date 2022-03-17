@@ -4,7 +4,6 @@ import { Avatar } from "@mui/material";
 import image from "../assets/image.jpeg";
 import Projects from "./Projects/Projects";
 
-import Button from "react-bootstrap/Button";
 const Home = () => {
   return (
     <div className={styles.container}>

@@ -1,7 +1,6 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import styles from "./Navbar.module.css";
-import { NavDropdown, Nav, Container, Navbar } from "react-bootstrap";
+
+import { Nav, Container, Navbar } from "react-bootstrap";
 const Navibar = () => {
   return (
     <Navbar bg="info" expand="lg" sticky="top">
