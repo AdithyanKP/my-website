@@ -10,7 +10,7 @@ const App = () => {
     <Router>
       <Navibar />
       <Routes>
-        <Route exact strict path="/home" element={<Home />} />
+        <Route exact strict path="/" element={<Home />} />
         <Route exact strict path="/skills" element={<Skill />} />
       </Routes>
 
