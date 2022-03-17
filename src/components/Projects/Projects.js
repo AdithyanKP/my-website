@@ -2,7 +2,10 @@ import React from "react";
 import image from "../../assets/pic.png";
 import netfliximage from "../../assets/netflix.png";
 import eplant from "../../assets/eplant.png";
+import { Link } from "react-router-dom";
 import styles from "./Projects.module.css";
+import { Button } from "react-bootstrap";
+
 const Projects = () => {
   return (
     <div className={styles.container}>
@@ -10,28 +13,32 @@ const Projects = () => {
       <div className={styles.imagecontainer}>
         <div className={styles.imagecontainer}>
           <p className={styles.title}>E-Plant</p>
+
           <div>
             <img className={styles.image} src={eplant} alt=""></img>
           </div>
-
-          <a
-            className={styles.a}
-            href="https://github.com/AdithyanKP/E-PLANT.git"
-          >
-            Check it out ✔
-          </a>
+          <div className={styles.a}>
+            <Button
+              variant="info"
+              href="https://github.com/AdithyanKP/E-PLANT.git"
+            >
+              View Github repo
+            </Button>
+          </div>
         </div>
         <p className={styles.title}>Covid-19 tracker</p>
         <div>
           <img className={styles.image} src={image} alt=""></img>
         </div>
 
-        <a
-          className={styles.a}
-          href="https://adithyan-covid-19-tracker.netlify.app"
-        >
-          Check it out ✔
-        </a>
+        <div className={styles.a}>
+          <Button
+            variant="info"
+            href="https://adithyan-covid-19-tracker.netlify.app"
+          >
+            View Demo
+          </Button>
+        </div>
       </div>
       <div className={styles.imagecontainer}>
         <p className={styles.title}>Netflix clone</p>
@@ -39,9 +46,11 @@ const Projects = () => {
           <img className={styles.image} src={netfliximage} alt=""></img>
         </div>
 
-        <a className={styles.a} href="https://adiflix.netlify.app/">
-          Check it out ✔
-        </a>
+        <div className={styles.a}>
+          <Button variant="info" href="https://adiflix.netlify.app/">
+            View Demo
+          </Button>
+        </div>
       </div>
     </div>
   );

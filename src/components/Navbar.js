@@ -1,41 +1,30 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
-const Navbar = () => {
+import { NavDropdown, Nav, Container, Navbar } from "react-bootstrap";
+const Navibar = () => {
   return (
-    <nav className={styles.navbar}>
-      <ul className={styles.navlinks}>
-        <li>
-          <NavLink
-            end
-            to="/"
-            style={({ isActive }) => {
-              return {
-                fontSize: isActive ? 25 : 20,
-              };
-            }}
-            className={styles.home}
-          >
-            Myself
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            end
-            to="/skills"
-            style={({ isActive }) => {
-              return {
-                fontSize: isActive ? 25 : 20,
-              };
-            }}
-            className={styles.about}
-          >
-            Skills
-          </NavLink>
-        </li>
-      </ul>
-    </nav>
+    <Navbar bg="info" expand="lg" sticky="top">
+      <Container>
+        <Navbar.Brand href="#home">
+          <img
+            src="https://i.pinimg.com/originals/11/74/21/1174215797dec302c416c52eaac5fc46.png"
+            width="50"
+            height="50"
+            className="d-inline-block align-top"
+            alt="React Bootstrap logo"
+          />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/skills">Skills</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 
-export default Navbar;
+export default Navibar;

@@ -22,6 +22,7 @@
   font-size: 26px;
   color: #00828c;
   margin: 20px;
+  font-weight: 500;
 }
 .p {
   text-align: center;
@@ -42,6 +43,7 @@
   font-size: 23px;
   font-weight: 500;
   margin-bottom: 25px;
+  margin-top: 10px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande";
 }
 .des {

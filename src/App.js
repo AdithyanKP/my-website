@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./components/Navbar";
+import Navibar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Skill from "./components/Skill";
@@ -8,7 +8,7 @@ import SocialLink from "./components/SocialLinks/SocialLink";
 const App = () => {
   return (
     <Router>
-      <Navbar />
+      <Navibar />
       <Routes>
         <Route exact strict path="/" element={<Home />} />
         <Route exact strict path="/skills" element={<Skill />} />
