@@ -15,7 +15,7 @@ const Home = () => {
         📍Hello I am Adithyan K P
         <br />
         📍I currently work as a software developer at Infospica consultancy and
-        services😎.
+        services💼.
         <br /> 📍I've completed my BCA graduation in 2018-2021🎓. <br />
         📍Currently working in custom web and mobile application development.
         <br />
