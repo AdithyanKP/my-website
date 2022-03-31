@@ -12,13 +12,10 @@ const Home = () => {
       </div>
 
       <p className={styles.para}>
-        📍Hello I am Adithyan K P
-        <br />
-        📍I currently work as a software developer at Infospica consultancy and
-        services💼.
-        <br /> 📍I've completed my BCA graduation in 2018-2021🎓. <br />
-        📍Currently working in custom web and mobile application development.
-        <br />
+        Hello I am Adithyan K P I currently work as a software developer at
+        Infospica consultancy and services💼. I've completed my BCA graduation
+        in 2018-2021🎓. <br />
+        Currently working in custom web and mobile application development.
       </p>
       <Projects />
     </div>

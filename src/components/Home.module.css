@@ -4,6 +4,7 @@
   margin-top: 20px;
   align-items: center;
   justify-content: center;
+  
 }
 .para {
   text-align: center;
@@ -15,6 +16,8 @@
   display: flex;
   justify-content: center;
   align-content: space-between;
+  max-height: 50;
+  max-width: 50;
 }
 .h1 {
   display: flex;
