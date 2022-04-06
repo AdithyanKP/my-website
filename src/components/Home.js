@@ -14,11 +14,11 @@ const Home = () => {
             <Avatar
               alt="Remy Sharp"
               src={image}
-              sx={{ width: 70, height: 70 }}
+              sx={{ width: 120, height: 120 }}
             />
           </div>
           <p className={styles.para}>
-            Hello I am Adithyan K P I currently work as a software developer at
+            Hello I am Adithyan KP. I currently work as a software developer at
             Infospica consultancy and services💼. I've completed my BCA
             graduation in 2018-2021🎓. Currently working in custom web and
             mobile application development.
