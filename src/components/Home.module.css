@@ -7,15 +7,19 @@
   
 }
 .para {
+  display: flex;
   text-align: center;
   font-size: 20px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande";
+  align-items: center;
 }
 .image {
+
   display: flex;
-  justify-content: center;
-  align-content: space-between;
+  flex-direction: row;
+justify-content: center;
+ 
   max-height: 50;
   max-width: 50;
 }
@@ -26,4 +30,25 @@
   justify-content: center;
   align-items: center;
   margin-top: 15px;
+}
+.animation{
+  width: 100%;
+  height: auto;
+  background-size: contain;
+}
+.layoutOne{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+@media (max-width: 800px) {
+  .layoutOne {
+    flex-direction: column;
+  }
+}
+.miniLayoutOne{
+  display: flex;
+  flex-direction: column;
 }
