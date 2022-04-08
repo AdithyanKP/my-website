@@ -9,7 +9,7 @@
 .para {
   display: flex;
   text-align: center;
-  font-size: 37px;
+  font-size: 34px;
   /* margin-top: 10px; */
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande";
   align-items: center;
@@ -48,7 +48,7 @@ justify-content: center;
     flex-direction: column;
   }
   .para{
-    font-size: 25px;
+    font-size: 16px;
   }
 }
 .miniLayoutOne{

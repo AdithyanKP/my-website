@@ -3,7 +3,7 @@ import React from "react";
 import { Nav, Container, Navbar } from "react-bootstrap";
 const Navibar = () => {
   return (
-    <Navbar bg="info" expand="lg" sticky="top">
+    <Navbar style={{ backgroundColor: "white" }} expand="lg" sticky="top">
       <Container>
         <Navbar.Brand href="#home">
           <img
