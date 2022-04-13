@@ -1,0 +1,11 @@
+body{
+margin-left: 80px;
+margin-right: 80px;
+
+}
+@media (max-width: 800px) {
+    body{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+  }

@@ -1,9 +1,10 @@
 .container {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 2px;
   align-items: center;
   justify-content: center;
+  padding-bottom: 35px;
   
 }
 .para {
@@ -13,6 +14,7 @@
   /* margin-top: 10px; */
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande";
   align-items: center;
+  color: #484848;
 }
 .image {
 
@@ -41,6 +43,7 @@ justify-content: center;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  
 
 }
 @media (max-width: 800px) {
@@ -48,7 +51,10 @@ justify-content: center;
     flex-direction: column;
   }
   .para{
-    font-size: 16px;
+    font-size: 18px;
+    background-color: #003366;
+    color: white;
+    padding: 10px;
   }
 }
 .miniLayoutOne{
