@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./Home.module.css";
-import { Avatar } from "@mui/material";
-import image from "../assets/image.jpeg";
+
 import Projects from "./Projects/Projects";
 import animation from "../assets/animation.gif";
 
