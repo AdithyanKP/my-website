@@ -26,7 +26,7 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande";
   font-size: 26px;
   color: #00828c;
-  margin: 20px;
+  margin: 2px;
   font-weight: 500;
 }
 .p {
@@ -59,7 +59,9 @@
 }
 .content{
   display: flex;
+  padding: 2px;
   align-items: center;
   font-size: 18px;
-  color: #a6a5a5;
+  color: #7b7b7b;
+  background-color: #03242b;
 }

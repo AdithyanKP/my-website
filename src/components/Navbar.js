@@ -5,14 +5,8 @@ const Navibar = () => {
   return (
     <Navbar style={{ backgroundColor: "white" }} expand="lg" sticky="top">
       <Container>
-        <Navbar.Brand href="#home">
-          <img
-            src="https://i.pinimg.com/originals/11/74/21/1174215797dec302c416c52eaac5fc46.png"
-            width="50"
-            height="50"
-            className="d-inline-block align-top"
-            alt="React Bootstrap logo"
-          />
+        <Navbar.Brand href="/">
+          <h3>ADITHYAN</h3>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

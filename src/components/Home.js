@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Home.module.css";
 
 import Projects from "./Projects/Projects";
-import animation from "../assets/animation.gif";
+import animation from "../assets/adi.gif";
 
 const Home = () => {
   return (
@@ -17,10 +17,10 @@ const Home = () => {
             />
           </div> */}
           <p className={styles.para}>
-            Hello I am Adithyan KP. I currently work as a software developer at
-            Infospica consultancy and services💼. I've completed my BCA
-            graduation in 2018-2021🎓. Currently working in custom web and
-            mobile application development.
+            Hi there... I currently work as a software developer at Infospica
+            consultancy and services💼. I've completed my BCA Graduation in
+            2018-2021🎓. Currently working in custom web and mobile application
+            development.
           </p>
         </div>
         <img className={styles.animation} src={animation} alt=""></img>
