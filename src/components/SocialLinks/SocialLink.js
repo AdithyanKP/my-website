@@ -17,7 +17,7 @@ const SocialLink = () => {
             aria-label="Linkedin.com"
             onClick={() => window.open("https://github.com/AdithyanKP/")}
           >
-            <GitHubIcon fontSize="large" style={{ color: "black" }} />
+            <GitHubIcon fontSize="large" style={{ color: "#03242b" }} />
           </IconButton>
         </div>
         <div className={styles.link}>
@@ -27,7 +27,7 @@ const SocialLink = () => {
               window.open("https://www.linkedin.com/in/adithyan-k-p/")
             }
           >
-            <LinkedInIcon fontSize="large" style={{ color: "black" }} />
+            <LinkedInIcon fontSize="large" style={{ color: "#03242b" }} />
           </IconButton>
         </div>
         <div className={styles.link}>
@@ -37,7 +37,7 @@ const SocialLink = () => {
               window.open("https://www.instagram.com/adhithyankp_/")
             }
           >
-            <InstagramIcon fontSize="large" style={{ color: "black" }} />
+            <InstagramIcon fontSize="large" style={{ color: "#03242b" }} />
           </IconButton>
         </div>
       </div>

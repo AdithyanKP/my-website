@@ -31,7 +31,11 @@ const Projects = () => {
         <div className={styles.a}>
           <Button
             /* variant="info" */
-            style={{ color: "white", backgroundColor: "black", border: "none" }}
+            style={{
+              color: "white",
+              backgroundColor: "#03242b",
+              border: "none",
+            }}
             href="https://github.com/AdithyanKP/E-PLANT.git"
           >
             View Github repo
@@ -56,7 +60,11 @@ const Projects = () => {
 
         <div className={styles.a}>
           <Button
-            style={{ color: "white", backgroundColor: "black", border: "none" }}
+            style={{
+              color: "white",
+              backgroundColor: "#03242b",
+              border: "none",
+            }}
             href="https://github.com/AdithyanKP/C-Share-MERN.git"
           >
             View Github repo
@@ -77,7 +85,11 @@ const Projects = () => {
 
         <div className={styles.a}>
           <Button
-            style={{ color: "white", backgroundColor: "black", border: "none" }}
+            style={{
+              color: "white",
+              backgroundColor: "#03242b",
+              border: "none",
+            }}
             href="https://adiflix.netlify.app/"
           >
             View Demo
@@ -112,7 +124,11 @@ const Projects = () => {
 
         <div className={styles.a}>
           <Button
-            style={{ color: "white", backgroundColor: "black", border: "none" }}
+            style={{
+              color: "white",
+              backgroundColor: "#03242b",
+              border: "none",
+            }}
             href="https://todo-app-adithyan.netlify.app/"
           >
             View Demo
