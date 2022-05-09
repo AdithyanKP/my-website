@@ -3,7 +3,12 @@ import styles from "./Home.module.css";
 
 import Projects from "./Projects/Projects";
 import animation from "../assets/developer.gif";
-
+import { Carousel } from "react-bootstrap";
+import eplant from "../assets/eplant.png";
+import netflix from "../assets/netflix.png";
+import todo from "../assets/todo.png";
+import eplantcart from "../assets/eplantcart.png";
+import cshare from "../assets/cshare.png";
 const Home = () => {
   return (
     <div className={styles.container}>
@@ -19,6 +24,23 @@ const Home = () => {
         </div>
         <img className={styles.animation} src={animation} alt=""></img>
       </div>
+      <Carousel>
+        <Carousel.Item>
+          <img className="d-block w-100" src={todo} alt="First slide" />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img className="d-block w-100" src={cshare} alt="Second slide" />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img className="d-block w-100" src={netflix} alt="Second slide" />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img className="d-block w-100" src={eplant} alt="Third slide" />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img className="d-block w-100" src={eplantcart} alt="Third slide" />
+        </Carousel.Item>
+      </Carousel>
 
       <Projects />
     </div>
