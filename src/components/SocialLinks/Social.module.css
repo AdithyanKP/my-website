@@ -7,9 +7,10 @@
   font-weight: 500;
 }
 .linkContainer {
-  flex: 1;
+  display: flex;
   margin-top: 10px;
-  align-items: center;
+  flex-direction: row;
+ 
   justify-content: center;
 }
 .link {

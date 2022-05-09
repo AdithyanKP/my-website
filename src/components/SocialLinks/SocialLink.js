@@ -9,9 +9,9 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 const SocialLink = () => {
   return (
     <div>
-      <div className={styles.linkContainer}>
-        <h1 className={styles.linkText}>Social Links</h1>
+      <h1 className={styles.linkText}>Social Links</h1>
 
+      <div className={styles.linkContainer}>
         <div className={styles.link}>
           <IconButton
             aria-label="Linkedin.com"
