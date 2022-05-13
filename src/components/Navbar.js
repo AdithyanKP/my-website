@@ -13,14 +13,6 @@ const Navibar = () => {
         <Navbar.Brand href="/">
           <h3 style={{ color: "#7b7b7b" }}>ADITHYAN K P</h3>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="/skills" style={{ color: "#7b7b7b", fontSize: 25 }}>
-              Skills
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
       </Container>
     </Navbar>
   );

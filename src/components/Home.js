@@ -20,7 +20,7 @@ const Home = () => {
     } else {
       return (
         <h3 style={{ display: "flex", justifyContent: "center", padding: 50 }}>
-          Blogs are writing😊
+          Coming soon😊
         </h3>
       );
     }
@@ -31,10 +31,9 @@ const Home = () => {
         <div className={styles.miniLayoutOne}>
           <p className={styles.para}>
             Hi there..
-            <br /> I currently work as a software developer at Infospica
-            consultancy and services. I've completed my BCA Graduation in
-            2018-2021. Currently working in custom web and mobile application
-            development.
+            <br /> I am a Full Stack React Developer. currently work as a
+            Software Engineer at Infospica consultancy and services. I've
+            completed my BCA Graduation in 2018-2021.
           </p>
         </div>
         <img className={styles.animation} src={animation} alt=""></img>

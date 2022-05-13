@@ -6,8 +6,6 @@ import { Button } from "react-bootstrap";
 const Projects = () => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.h1}>Projects</h1>
-
       {/*    E-plant project */}
       <div className={styles.imagecontainer}>
         <div>
