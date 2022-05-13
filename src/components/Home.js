@@ -1,15 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Home.module.css";
 
 import Projects from "./Projects/Projects";
 import animation from "../assets/developer.gif";
-/* import { Carousel } from "react-bootstrap";
-import eplant from "../assets/eplant.png";
-import netflix from "../assets/netflix.png";
-import todo from "../assets/todo.png";
-import eplantcart from "../assets/eplantcart.png";
-import cshare from "../assets/cshare.png"; */
+
+import Paper from "@material-ui/core/Paper";
+import Tab from "@material-ui/core/Tab";
+import Tabs from "@material-ui/core/Tabs";
+import Skill from "./Skill";
+
 const Home = () => {
+  const [value, setValue] = useState(0);
+
+  const renderCompoent = () => {
+    if (value === 0) {
+      return <Projects />;
+    } else if (value === 1) {
+      return <Skill />;
+    } else {
+      return (
+        <h3 style={{ display: "flex", justifyContent: "center", padding: 50 }}>
+          Blogs are writing😊
+        </h3>
+      );
+    }
+  };
   return (
     <div className={styles.container}>
       <div className={styles.layoutOne}>
@@ -24,25 +39,25 @@ const Home = () => {
         </div>
         <img className={styles.animation} src={animation} alt=""></img>
       </div>
-      {/* <Carousel>
-        <Carousel.Item>
-          <img className="d-block w-100" src={todo} alt="First slide" />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="d-block w-100" src={cshare} alt="Second slide" />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="d-block w-100" src={netflix} alt="Second slide" />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="d-block w-100" src={eplant} alt="Third slide" />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="d-block w-100" src={eplantcart} alt="Third slide" />
-        </Carousel.Item>
-      </Carousel> */}
+      <div>
+        <Paper square>
+          <Tabs
+            value={value}
+            textColor="primary"
+            indicatorColor="primary"
+            centered
+            onChange={(event, newValue) => {
+              setValue(newValue);
+            }}
+          >
+            <Tab label="Projects" />
+            <Tab label="Skills" />
+            <Tab label="Blog" />
+          </Tabs>
+        </Paper>
+      </div>
 
-      <Projects />
+      {renderCompoent()}
     </div>
   );
 };

@@ -16,8 +16,11 @@
 .link {
   display: flex;
   justify-content: center;
-  align-content: space-between;
+ align-content: space-between;
+ 
   margin-top: 15px;
   font-size: 23px;
-  font-weight: 400;
+  
+ 
+  
 }
