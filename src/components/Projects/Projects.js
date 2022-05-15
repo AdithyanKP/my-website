@@ -9,8 +9,9 @@ const Projects = () => {
       {/*    E-plant project */}
       <div className={styles.imagecontainer}>
         <div>
-          <p className={styles.title}>E-Plant</p>
-
+          <p className={styles.title}>
+            E-Plant Server-Side web application, E-Commerce
+          </p>
           <p className={styles.content}>
             E-Plant is one of my memorable project. First full stack project in
             my career. Iam really feeling stressed when doing this project
@@ -43,94 +44,87 @@ const Projects = () => {
 
       {/* covid -19 Tracker */}
       <div className={styles.imagecontainer}>
-        <p className={styles.title}>C-Share</p>
-        <p className={styles.content}>
-          C-Share is my second full stack project. C-share is a social media app
-          that offers user can post content, likes, delete the post. Mainly
-          C-Share offers google authentication for users and I used JWT for
-          working great my authentication. In this project i completed full
-          authentication process with forgot and reset password using email
-          verification. I managed state using REDUX JS
-          <br />
-          React js , Redux js,MUI, Node js, Express Js, Mongoose are the main
-          tech stack of this project.
-        </p>
+        <div>
+          <p className={styles.title}>
+            Logus SocialMedia application,Fully Featured Authentication
+          </p>
+          <p className={styles.content}>
+            Logus is my second full stack project. C-share is a social media app
+            that offers user can post content, likes, delete the post. Mainly
+            C-Share offers google authentication for users and I used JWT for
+            working great my authentication. In this project i completed full
+            authentication process with forgot and reset password using email
+            verification. I managed state using REDUX JS
+            <br />
+            React js , Redux js,MUI, Node js, Express Js, Mongoose are the main
+            tech stack of this project.
+          </p>
 
-        <div className={styles.a}>
-          <Button
-            style={{
-              color: "white",
-              backgroundColor: "#03242b",
-              border: "none",
-            }}
-            href="https://github.com/AdithyanKP/C-Share-MERN.git"
-          >
-            View Github repo
-          </Button>
+          <div className={styles.a}>
+            <Button
+              style={{
+                color: "white",
+                backgroundColor: "#03242b",
+                border: "none",
+              }}
+              href="https://github.com/AdithyanKP/C-Share-MERN.git"
+            >
+              View Github repo
+            </Button>
+          </div>
         </div>
       </div>
 
       {/* Netflix-clone */}
       <div className={styles.imagecontainer}>
-        <p className={styles.title}>Netflix clone</p>
-        <p className={styles.content}>
-          In my free time i watch some series and movies in Netflix. So i
-          decided to clone Netflix. It was an awesome journey with React. I am
-          really learned a lot from this project React components, State, Prop
-          and so on. I managed data through consuming TMDB API, and i used Axios
-          for handling API requests. We can watch movie trailers in this app.
-        </p>
+        <div>
+          <p className={styles.title}>Netflix clone , API consumption,</p>
+          <p className={styles.content}>
+            In my free time i watch some series and movies in Netflix. So i
+            decided to clone Netflix. It was an awesome journey with React. I am
+            really learned a lot from this project React components, State, Prop
+            and so on. I managed data through consuming TMDB API, and i used
+            Axios for handling API requests. We can watch movie trailers in this
+            app.
+          </p>
 
-        <div className={styles.a}>
-          <Button
-            style={{
-              color: "white",
-              backgroundColor: "#03242b",
-              border: "none",
-            }}
-            href="https://adiflix.netlify.app/"
-          >
-            View Demo
-          </Button>
+          <div className={styles.a}>
+            <Button
+              style={{
+                color: "white",
+                backgroundColor: "#03242b",
+                border: "none",
+              }}
+              href="https://adiflix.netlify.app/"
+            >
+              View Demo
+            </Button>
+          </div>
         </div>
       </div>
 
-      {/*  Quiz-app */}
-      {/*  <div className={styles.imagecontainer}>
-        <p className={styles.title}>Quiz-App</p> */}
-      {/*   <div>
-          <img className={styles.image} src={quiz} alt=""></img>
-        </div> */}
-
-      {/*   <div className={styles.a}>
-          <Button
-            style={{ color: "white", backgroundColor: "black", border: "none" }}
-            href="https://quizz-kp.netlify.app/"
-          >
-            View Demo
-          </Button>
-        </div>
-      </div> */}
-
       {/* Todo app */}
       <div className={styles.imagecontainer}>
-        <p className={styles.title}>Todo App</p>
-        <p className={styles.content}>
-          First React app . I can add my daily tasks, after completion i can
-          mark completed, delete feature also available
-        </p>
+        <div>
+          <p className={styles.title}>Todo App </p>
+          <p className={styles.content}>
+            Basic Todo App, it was used to write daily todo tasks. we can mark
+            completed todo ontime and also we can remove. this app fully
+            responsive and deliver better user experience.
+          </p>
 
-        <div className={styles.a}>
-          <Button
-            style={{
-              color: "white",
-              backgroundColor: "#03242b",
-              border: "none",
-            }}
-            href="https://todo-app-adithyan.netlify.app/"
-          >
-            View Demo
-          </Button>
+          <div className={styles.a}>
+            <Button
+              style={{
+                color: "white",
+                backgroundColor: "#03242b",
+                border: "none",
+              }}
+              href="https://todo-app-adithyan.netlify.app/"
+            >
+              View Demo
+            </Button>
+          </div>
         </div>
       </div>
     </div>

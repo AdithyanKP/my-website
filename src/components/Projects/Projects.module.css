@@ -37,16 +37,19 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande";
 }
 .title {
-  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  text-align:'center';
   font-size: 24px;
   font-weight: 700;
-  margin: 15px;
+  margin: 5px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande";
   
-  text-decoration-line: underline;
-  text-decoration-color:#00828c;
+  
 }
 .a {
+  
+  
   text-align: center;
   font-size: 23px;
   font-weight: 500;
