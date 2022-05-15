@@ -1,15 +1,15 @@
 import React from "react";
 
 import styles from "./Projects.module.css";
-import { Button } from "react-bootstrap";
 
+import { Button } from "@mui/material";
 const Projects = () => {
   return (
     <div className={styles.container}>
       {/*    E-plant project */}
       <div className={styles.imagecontainer}>
         <div>
-          <p className={styles.title}>
+          <p className={styles.title} style={{ marginTop: 30 }}>
             E-Plant Server-Side web application, E-Commerce
           </p>
           <p className={styles.content}>
@@ -87,20 +87,19 @@ const Projects = () => {
             Axios for handling API requests. We can watch movie trailers in this
             app.
           </p>
-
-          <div className={styles.a}>
-            <Button
-              style={{
-                color: "white",
-                backgroundColor: "#03242b",
-                border: "none",
-              }}
-              href="https://adiflix.netlify.app/"
-            >
-              View Demo
-            </Button>
-          </div>
         </div>
+      </div>
+      <div className={styles.a}>
+        <Button
+          style={{
+            color: "white",
+            backgroundColor: "#03242b",
+            border: "none",
+          }}
+          href="https://adiflix.netlify.app/"
+        >
+          View Demo
+        </Button>
       </div>
 
       {/* Todo app */}
@@ -112,21 +111,22 @@ const Projects = () => {
             completed todo ontime and also we can remove. this app fully
             responsive and deliver better user experience.
           </p>
-
-          <div className={styles.a}>
-            <Button
-              style={{
-                color: "white",
-                backgroundColor: "#03242b",
-                border: "none",
-              }}
-              href="https://todo-app-adithyan.netlify.app/"
-            >
-              View Demo
-            </Button>
-          </div>
         </div>
       </div>
+
+      <div className={styles.a}>
+        <Button
+          style={{
+            color: "white",
+            backgroundColor: "#03242b",
+            border: "none",
+          }}
+          href="https://todo-app-adithyan.netlify.app/"
+        >
+          View Demo
+        </Button>
+      </div>
+
       <div
         style={{
           display: "flex",
@@ -139,7 +139,7 @@ const Projects = () => {
             color: "black",
             backgroundColor: "white",
             border: "none",
-            fontSize: 20,
+            fontSize: 14,
           }}
           href="https://github.com/AdithyanKP/"
         >

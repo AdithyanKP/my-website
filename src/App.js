@@ -8,7 +8,7 @@ import SocialLink from "./components/SocialLinks/SocialLink";
 const App = () => {
   return (
     <Router>
-      <Navibar />
+      {/*  <Navibar /> */}
       <Routes>
         <Route exact strict path="/" element={<Home />} />
         <Route exact strict path="/skills" element={<Skill />} />

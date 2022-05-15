@@ -26,19 +26,29 @@ const Home = () => {
     }
   };
   return (
-    <div className={styles.container}>
-      <div className={styles.layoutOne}>
-        <div className={styles.miniLayoutOne}>
-          <p className={styles.para}>
-            Hi there..
-            <br /> I am a Full Stack React Developer. Currently work as a
-            Software Engineer at Infospica consultancy and services. I've
-            completed my BCA Graduation in 2018-2021.
-          </p>
+    <>
+      <div className={styles.container}>
+        <p style={{ padding: 8, fontSize: 15 }}>ADITHYAN KP</p>
+        <div className={styles.layoutOne}>
+          <div className={styles.miniLayoutOne}>
+            <p className={styles.para}>
+              Hi there..
+              <br /> I am a Full Stack React Developer.
+              <br /> Currently work as a Software Engineer at Infospica
+              consultancy and services.
+              <br /> I've completed my BCA Graduation in 2018-2021.
+            </p>
+          </div>
+          {/*    <img className={styles.animation} src={animation} alt=""></img> */}
         </div>
-        <img className={styles.animation} src={animation} alt=""></img>
       </div>
-      <div>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "center",
+        }}
+      >
         <Paper square>
           <Tabs
             value={value}
@@ -55,9 +65,8 @@ const Home = () => {
           </Tabs>
         </Paper>
       </div>
-
-      {renderCompoent()}
-    </div>
+      <div style={{ marginLeft: 20, marginRight: 20 }}>{renderCompoent()}</div>
+    </>
   );
 };
 
