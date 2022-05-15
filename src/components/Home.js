@@ -31,7 +31,7 @@ const Home = () => {
         <div className={styles.miniLayoutOne}>
           <p className={styles.para}>
             Hi there..
-            <br /> I am a Full Stack React Developer. currently work as a
+            <br /> I am a Full Stack React Developer. Currently work as a
             Software Engineer at Infospica consultancy and services. I've
             completed my BCA Graduation in 2018-2021.
           </p>

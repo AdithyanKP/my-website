@@ -2,6 +2,7 @@ import React from "react";
 
 import styles from "./Projects.module.css";
 import { Button } from "react-bootstrap";
+import { fontSize } from "@mui/system";
 
 const Projects = () => {
   return (
@@ -126,6 +127,25 @@ const Projects = () => {
             </Button>
           </div>
         </div>
+      </div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: 20,
+        }}
+      >
+        <Button
+          style={{
+            color: "black",
+            backgroundColor: "white",
+            border: "none",
+            fontSize: 20,
+          }}
+          href="https://github.com/AdithyanKP/"
+        >
+          See more..
+        </Button>
       </div>
     </div>
   );
