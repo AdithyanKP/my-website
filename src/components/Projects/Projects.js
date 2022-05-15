@@ -131,7 +131,7 @@ const Projects = () => {
       <div
         style={{
           display: "flex",
-          justifyContent: "center",
+          justifyContent: "flex-start",
           marginTop: 20,
         }}
       >
