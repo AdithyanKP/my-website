@@ -2,7 +2,6 @@ import React from "react";
 
 import styles from "./Projects.module.css";
 import { Button } from "react-bootstrap";
-import { fontSize } from "@mui/system";
 
 const Projects = () => {
   return (
