@@ -13,18 +13,19 @@ const Projects = () => {
             E-Plant Server-Side web application, E-Commerce
           </p>
           <p className={styles.content}>
-            E-Plant is one of my memorable project. First full stack project in
-            my career. Iam really feeling stressed when doing this project
-            because everything will new for me. But i decided to never give up
-            at any cost. So i completed this project nicely. After completion i
-            enjoyed the achivement and i got a lot of confidence to face new
-            challenges.
+            E-PLant is an ecommerce application users can buy indoor plants and
+            pots Both online and offline, Admin can access the product details,
+            order details, user details, order manegement and so on. In this
+            application offered better security help of Bcrypt library.
+            <br /> E-Plant is one of my memorable project i done. First full
+            stack project in my career. Iam really feeling stressed when i doing
+            this project because everything will new for me. But i decided to
+            never give up at any cost. So i completed this project nicely. After
+            completion i enjoyed the achivement and i got a lot of confidence to
+            face new challenges.
             <br />
             Node js, Express js, HTML, CSS, HBS, MYSQL are the mainly used tech
-            stack in this project. E-PLant is an ecommerce application users can
-            buy indoor plants and pots online, Admin can access the product
-            details, order details, user details, order manegement and so on. In
-            this application offered better security help of NPM packages.
+            stack in this project..
           </p>
 
           <div className={styles.a}>
@@ -52,9 +53,9 @@ const Projects = () => {
             Logus SocialMedia application,Fully Featured Authentication
           </p>
           <p className={styles.content}>
-            Logus is my second full stack project. C-share is a social media app
+            Logus is my second full stack project. Logus is a social media app
             that offers user can post content, likes, delete the post. Mainly
-            C-Share offers google authentication for users and I used JWT for
+            Logus offers google authentication for users and I used JWT for
             working great my authentication. In this project i completed full
             authentication process with forgot and reset password using email
             verification. I managed state using REDUX JS
@@ -125,7 +126,7 @@ const Projects = () => {
         <Button
           style={{
             color: "white",
-            backgroundColor: "##262626",
+            backgroundColor: "#262626",
             border: "none",
             borderRadius: 8,
             padding: 5,
@@ -148,7 +149,7 @@ const Projects = () => {
             color: "black",
             backgroundColor: "white",
             border: "none",
-            fontSize: 16,
+            fontSize: 18,
           }}
           href="https://github.com/AdithyanKP/"
         >
