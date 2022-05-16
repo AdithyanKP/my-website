@@ -34,6 +34,8 @@ const Projects = () => {
                 color: "white",
                 backgroundColor: "#03242b",
                 border: "none",
+                borderRadius: 8,
+                padding: 5,
               }}
               href="https://github.com/AdithyanKP/E-PLANT.git"
             >
@@ -67,6 +69,8 @@ const Projects = () => {
                 color: "white",
                 backgroundColor: "#03242b",
                 border: "none",
+                borderRadius: 8,
+                padding: 5,
               }}
               href="https://github.com/AdithyanKP/C-Share-MERN.git"
             >
@@ -96,6 +100,8 @@ const Projects = () => {
             color: "white",
             backgroundColor: "#03242b",
             border: "none",
+            borderRadius: 8,
+            padding: 5,
           }}
           href="https://adiflix.netlify.app/"
         >
@@ -121,6 +127,8 @@ const Projects = () => {
             color: "white",
             backgroundColor: "#03242b",
             border: "none",
+            borderRadius: 8,
+            padding: 5,
           }}
           href="https://todo-app-adithyan.netlify.app/"
         >

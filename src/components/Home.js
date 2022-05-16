@@ -42,7 +42,7 @@ const Home = () => {
         >
           <p
             style={{
-              padding: 8,
+              padding: 12,
               fontSize: 25,
               color: "#bfbfbf",
               fontWeight: "bold",
