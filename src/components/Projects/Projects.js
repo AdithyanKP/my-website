@@ -32,7 +32,7 @@ const Projects = () => {
               /* variant="info" */
               style={{
                 color: "white",
-                backgroundColor: "#03242b",
+                backgroundColor: "#262626",
                 border: "none",
                 borderRadius: 8,
                 padding: 5,
@@ -67,7 +67,7 @@ const Projects = () => {
             <Button
               style={{
                 color: "white",
-                backgroundColor: "#03242b",
+                backgroundColor: "#262626",
                 border: "none",
                 borderRadius: 8,
                 padding: 5,
@@ -98,7 +98,7 @@ const Projects = () => {
         <Button
           style={{
             color: "white",
-            backgroundColor: "#03242b",
+            backgroundColor: "#262626",
             border: "none",
             borderRadius: 8,
             padding: 5,
@@ -125,7 +125,7 @@ const Projects = () => {
         <Button
           style={{
             color: "white",
-            backgroundColor: "#03242b",
+            backgroundColor: "##262626",
             border: "none",
             borderRadius: 8,
             padding: 5,

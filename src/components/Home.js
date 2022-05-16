@@ -115,9 +115,9 @@ const Home = () => {
               setValue(newValue);
             }}
           >
-            <Tab label="Projects" />
-            <Tab label="Skills" />
-            <Tab label="Blog" />
+            <Tab style={{ color: "#262626" }} label="Projects" />
+            <Tab style={{ color: "#262626" }} label="Skills" />
+            <Tab style={{ color: "#262626" }} label="Blog" />
           </Tabs>
         </Paper>
       </div>
