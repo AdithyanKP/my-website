@@ -44,7 +44,7 @@ const Home = () => {
             style={{
               padding: 8,
               fontSize: 25,
-              color: "white",
+              color: "#bfbfbf",
               fontWeight: "bold",
             }}
           >

@@ -12,10 +12,10 @@
   display: flex;
   text-align:initial;
   font-size: 34px;
-  /* margin-top: 10px; */
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  font-family:'Gudea', sans-serif;
   align-items: center;
- color: white;
+ color:#bfbfbf;
 }
 .image {
 
@@ -70,7 +70,7 @@ justify-content: center;
     font-size: 22px;
     
    
-    color:white;
+    color:#bfbfbf;
     margin-top: 0px;
    padding-bottom: 15px;
    padding-left: 10px;
