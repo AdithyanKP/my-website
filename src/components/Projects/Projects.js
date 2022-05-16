@@ -26,19 +26,20 @@ const Projects = () => {
             details, order details, user details, order manegement and so on. In
             this application offered better security help of NPM packages.
           </p>
-        </div>
-        <div className={styles.a}>
-          <Button
-            /* variant="info" */
-            style={{
-              color: "white",
-              backgroundColor: "#03242b",
-              border: "none",
-            }}
-            href="https://github.com/AdithyanKP/E-PLANT.git"
-          >
-            View Github repo
-          </Button>
+
+          <div className={styles.a}>
+            <Button
+              /* variant="info" */
+              style={{
+                color: "white",
+                backgroundColor: "#03242b",
+                border: "none",
+              }}
+              href="https://github.com/AdithyanKP/E-PLANT.git"
+            >
+              View Github repo
+            </Button>
+          </div>
         </div>
       </div>
 
@@ -134,17 +135,17 @@ const Projects = () => {
           marginTop: 20,
         }}
       >
-        <Button
+        <a
           style={{
             color: "black",
             backgroundColor: "white",
             border: "none",
-            fontSize: 14,
+            fontSize: 16,
           }}
           href="https://github.com/AdithyanKP/"
         >
-          See more..
-        </Button>
+          See more
+        </a>
       </div>
     </div>
   );

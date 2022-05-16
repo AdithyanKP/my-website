@@ -1,10 +1,10 @@
 import React from "react";
-import Navibar from "./components/Navbar";
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Skill from "./components/Skill";
 import Footer from "./components/footer";
-import SocialLink from "./components/SocialLinks/SocialLink";
+
 const App = () => {
   return (
     <Router>
@@ -14,7 +14,7 @@ const App = () => {
         <Route exact strict path="/skills" element={<Skill />} />
       </Routes>
 
-      <SocialLink />
+      {/* <SocialLink /> */}
       <Footer />
     </Router>
   );

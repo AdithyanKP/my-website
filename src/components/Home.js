@@ -2,7 +2,11 @@ import React, { useState } from "react";
 import styles from "./Home.module.css";
 
 import Projects from "./Projects/Projects";
-import animation from "../assets/developer.gif";
+
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import { IconButton } from "@mui/material";
 
 import Paper from "@material-ui/core/Paper";
 import Tab from "@material-ui/core/Tab";
@@ -19,16 +23,68 @@ const Home = () => {
       return <Skill />;
     } else {
       return (
-        <h3 style={{ display: "flex", justifyContent: "center", padding: 50 }}>
-          Coming soon😊
-        </h3>
+        <div style={{ display: "flex", justifyContent: "center", padding: 50 }}>
+          <h3>Coming soon😊</h3>
+        </div>
       );
     }
   };
   return (
     <>
       <div className={styles.container}>
-        <p style={{ padding: 8, fontSize: 15 }}>ADITHYAN KP</p>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-between",
+            width: "100%",
+          }}
+        >
+          <p
+            style={{
+              padding: 8,
+              fontSize: 25,
+              color: "white",
+              fontWeight: "bold",
+            }}
+          >
+            ADITHYAN KP
+          </p>
+          <div className={styles.icon}>
+            <IconButton
+              aria-label="Linkedin.com"
+              onClick={() => window.open("https://github.com/AdithyanKP/")}
+            >
+              <GitHubIcon
+                fontSize="large"
+                style={{ color: "white", padding: 2, fontSize: 42 }}
+              />
+            </IconButton>
+            <IconButton
+              aria-label="Linkedin.com"
+              onClick={() =>
+                window.open("https://www.linkedin.com/in/adithyan-k-p/")
+              }
+            >
+              <LinkedInIcon
+                fontSize="large"
+                style={{ color: "white", padding: 2, fontSize: 42 }}
+              />
+            </IconButton>
+            <IconButton
+              aria-label="Linkedin.com"
+              onClick={() =>
+                window.open("https://www.instagram.com/adhithyankp_/")
+              }
+            >
+              <InstagramIcon
+                fontSize="large"
+                style={{ color: "white", padding: 2, fontSize: 42 }}
+              />
+            </IconButton>
+          </div>
+        </div>
+
         <div className={styles.layoutOne}>
           <div className={styles.miniLayoutOne}>
             <p className={styles.para}>
