@@ -12,9 +12,8 @@
   display: flex;
   text-align:initial;
   font-size: 34px;
- 
-  font-family:'Gudea', sans-serif;
-  align-items: center;
+ font-family:'Gudea', sans-serif;
+ align-items: center;
  color:#bfbfbf;
 position: relative;
 animation-duration: 2s;

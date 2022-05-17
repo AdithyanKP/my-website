@@ -3,6 +3,15 @@ import React from "react";
 import styles from "./Projects.module.css";
 
 import { Button } from "@mui/material";
+
+import {
+  nodejs,
+  react,
+  javascript,
+  mysql,
+  mongoose,
+} from "../../constants/Constant";
+
 const Projects = () => {
   return (
     <div className={styles.container}>
@@ -27,6 +36,19 @@ const Projects = () => {
             Node js, Express js, HTML, CSS, HBS, MYSQL are the mainly used tech
             stack in this project..
           </p>
+
+          <div className={styles.gitcontainer}>
+            <a className={styles.langgit} href={nodejs}>
+              node js
+            </a>
+            <a className={styles.langgit} href={mysql}>
+              mySql
+            </a>
+            <a className={styles.langgit} href={javascript}>
+              javascript
+            </a>
+            <span className={styles.langgit}>express js</span>
+          </div>
 
           <div className={styles.a}>
             <Button
@@ -64,6 +86,20 @@ const Projects = () => {
             tech stack of this project.
           </p>
 
+          <div className={styles.gitcontainer}>
+            <a className={styles.langgit} href={nodejs}>
+              node js
+            </a>
+            <a className={styles.langgit} href={react}>
+              react js
+            </a>
+            <span className={styles.langgit}>express js</span>
+            <a className={styles.langgit} href={mongoose}>
+              mongoose
+            </a>
+            <span className={styles.langgit}>jwt</span>
+          </div>
+
           <div className={styles.a}>
             <Button
               style={{
@@ -95,6 +131,17 @@ const Projects = () => {
           </p>
         </div>
       </div>
+
+      <div className={styles.gitcontainer}>
+        <a className={styles.langgit} href={react}>
+          react js
+        </a>
+        <a className={styles.langgit} href={javascript}>
+          javascript
+        </a>
+        <span className={styles.langgit}>axios</span>
+      </div>
+
       <div className={styles.a}>
         <Button
           style={{
@@ -120,6 +167,16 @@ const Projects = () => {
             responsive and deliver better user experience.
           </p>
         </div>
+      </div>
+
+      <div className={styles.gitcontainer}>
+        <a className={styles.langgit} href={react}>
+          react js
+        </a>
+        <a className={styles.langgit} href={javascript}>
+          javascript
+        </a>
+        <span className={styles.langgit}>local storage</span>
       </div>
 
       <div className={styles.a}>

@@ -6,6 +6,40 @@
  
 }
 
+.gitcontainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  animation-duration: 1.5s;
+  animation-name: slidein; /*simple  animation implemented */
+}
+@keyframes slidein {
+  from {
+  margin-left: 100%;
+    width: 300%;
+     }
+    to {
+     margin-left: 0%;
+   width: 100%;
+     }
+  }
+
+.langgit {
+  color: #58a6ff;
+  background-color: #3386fa26;
+  text-decoration: none;
+  border-radius: 20px;
+  border: none;
+  font-size: 14px;
+  padding: 5px;
+  margin-right: 10px;
+ 
+}
+
+
+
+
+
 .imagecontainer {
   display: flex;
   flex-direction: column;
@@ -127,3 +161,4 @@ animation-name: slidein; /*simple  animation implemented */
     margin: 0px;
   }
 }
+
