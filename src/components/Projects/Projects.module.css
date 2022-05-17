@@ -1,6 +1,7 @@
 .container {
   padding: 2px;
   margin: 60px;
+ 
   /* background-color: #00828c; */
  
 }
@@ -35,6 +36,7 @@
   font-weight: 400;
   margin: 2px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande";
+  
 }
 .title {
   display: flex;
@@ -43,7 +45,8 @@
   font-size: 24px;
   font-weight: 700;
   margin: 2px;
-  
+  position: relative;
+  animation: mymove 5s infinite;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande";
   
   
@@ -68,7 +71,8 @@
   align-items: center;
   font-size: 18px;
   color: #7b7b7b;
-  /* background-color: #03242b; */
+  
+  
 }
 @media (max-width: 1100px) {
   .content{

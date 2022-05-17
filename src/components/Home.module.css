@@ -12,11 +12,25 @@
   display: flex;
   text-align:initial;
   font-size: 34px;
-  
+ 
   font-family:'Gudea', sans-serif;
   align-items: center;
  color:#bfbfbf;
+position: relative;
+animation-duration: 2s;
+animation-name: slidein; /*simple  animation implemented */
 }
+@keyframes slidein {
+from {
+margin-left: 100%;
+  width: 300%;
+   }
+  to {
+   margin-left: 0%;
+ width: 100%;
+   }
+}
+
 .image {
 
   display: flex;
@@ -86,3 +100,4 @@ justify-content: center;
   display: flex;
   flex-direction: column;
 }
+
