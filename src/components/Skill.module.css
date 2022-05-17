@@ -4,7 +4,20 @@
   justify-content: center;
   margin-top: 80px;
   margin-bottom: 80px;
+  animation-duration: .5s;
+animation-name: slidein; /*simple  animation implemented */
 }
+
+@keyframes slidein {
+  from {
+  margin-left: 100%;
+    width: 300%;
+     }
+    to {
+     margin-left: 0%;
+   width: 100%;
+     }
+  }
 .text {
   display: flex;
   align-items: center;
@@ -12,6 +25,5 @@
   margin-top: 20px;
   font-size: 27px;
   font-weight: 700;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family:'Gudea', sans-serif;
 }

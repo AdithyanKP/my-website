@@ -48,7 +48,7 @@
   position: relative;
   
   font-family:'Gudea', sans-serif;
-  animation-duration: 4s;
+  animation-duration: 1.5s;
 animation-name: slidein; /*simple  animation implemented */
   
 }
@@ -70,8 +70,23 @@ animation-name: slidein; /*simple  animation implemented */
   font-weight: 500;
   margin-bottom: 18px;
   margin-top: 10px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande";
+  font-family:'Gudea', sans-serif;
+  animation-duration: 2s;
+animation-name: slidein; /*simple  animation implemented */
 }
+@keyframes slidein {
+  from {
+  margin-left: 100%;
+    width: 300%;
+     }
+    to {
+     margin-left: 0%;
+   width: 100%;
+     }
+  }
+
+
+
 .des {
   text-align: center;
   font-size: 20px;
@@ -84,7 +99,7 @@ animation-name: slidein; /*simple  animation implemented */
   align-items: center;
   font-size: 18px;
   color: #7b7b7b;
-  animation-duration: 4s;
+  animation-duration: 2s;
 animation-name: slidein; /*simple  animation implemented */
   
 }
