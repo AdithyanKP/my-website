@@ -5,7 +5,8 @@ import Projects from "./Projects/Projects";
 
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import InstagramIcon from "@mui/icons-material/Instagram";
+
+import TwitterIcon from "@mui/icons-material/Twitter";
 import { IconButton } from "@mui/material";
 
 import Paper from "@material-ui/core/Paper";
@@ -40,16 +41,19 @@ const Home = () => {
             width: "100%",
           }}
         >
-          <p
-            style={{
-              padding: 12,
-              fontSize: 25,
-              color: "#bfbfbf",
-              fontWeight: "bold",
-            }}
-          >
-            ADITHYAN KP
-          </p>
+          <div className={styles.title}>
+            <p
+              style={{
+                padding: 12,
+                fontSize: 25,
+                color: "#bfbfbf",
+                fontWeight: "bold",
+              }}
+            >
+              ADITHYAN KP
+            </p>
+          </div>
+
           <div className={styles.icon}>
             <IconButton
               aria-label="Linkedin.com"
@@ -57,7 +61,7 @@ const Home = () => {
             >
               <GitHubIcon
                 fontSize="large"
-                style={{ color: "white", padding: 2, fontSize: 42 }}
+                style={{ color: "#bfbfbf", padding: 2, fontSize: 42 }}
               />
             </IconButton>
             <IconButton
@@ -68,18 +72,16 @@ const Home = () => {
             >
               <LinkedInIcon
                 fontSize="large"
-                style={{ color: "white", padding: 2, fontSize: 42 }}
+                style={{ color: "#bfbfbf", padding: 2, fontSize: 42 }}
               />
             </IconButton>
             <IconButton
               aria-label="Linkedin.com"
-              onClick={() =>
-                window.open("https://www.instagram.com/adhithyankp_/")
-              }
+              onClick={() => window.open("https://twitter.com/adithyanKP_")}
             >
-              <InstagramIcon
+              <TwitterIcon
                 fontSize="large"
-                style={{ color: "white", padding: 2, fontSize: 42 }}
+                style={{ color: "#bfbfbf", padding: 2, fontSize: 42 }}
               />
             </IconButton>
           </div>

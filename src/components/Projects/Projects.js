@@ -97,7 +97,6 @@ const Projects = () => {
             <a className={styles.langgit} href={mongoose}>
               mongoose
             </a>
-            <span className={styles.langgit}>jwt</span>
           </div>
 
           <div className={styles.a}>
