@@ -46,11 +46,24 @@
   font-weight: 700;
   margin: 2px;
   position: relative;
-  animation: mymove 5s infinite;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande";
   
+  font-family:'Gudea', sans-serif;
+  animation-duration: 4s;
+animation-name: slidein; /*simple  animation implemented */
   
 }
+@keyframes slidein {
+  from {
+  margin-left: 100%;
+    width: 300%;
+     }
+    to {
+     margin-left: 0%;
+   width: 100%;
+     }
+  }
+
+
 .a {
   text-align: center;
   font-size: 23px;
@@ -71,12 +84,28 @@
   align-items: center;
   font-size: 18px;
   color: #7b7b7b;
-  
+  animation-duration: 4s;
+animation-name: slidein; /*simple  animation implemented */
   
 }
+@keyframes slidein {
+  from {
+  margin-left: 100%;
+    width: 300%;
+     }
+    to {
+     margin-left: 0%;
+   width: 100%;
+     }
+  }
+
+
+
+
 @media (max-width: 1100px) {
   .content{
     font-size: 16px;
+    
   }
   .container{
     padding: 0px;
