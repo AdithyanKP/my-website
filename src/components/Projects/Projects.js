@@ -26,12 +26,12 @@ const Projects = () => {
             pots Both online and offline, Admin can access the product details,
             order details, user details, order manegement and so on. In this
             application offered better security help of Bcrypt library.
-            <br /> E-Plant is one of my memorable project i done. First full
-            stack project in my career. Iam really feeling stressed when i doing
-            this project because everything will new for me. But i decided to
-            never give up at any cost. So i completed this project nicely. After
-            completion i enjoyed the achivement and i got a lot of confidence to
-            face new challenges.
+            <br /> E-Plant is one of my memorable projects I was done. First
+            full stack project in my career. Iam really feeling stressed when I
+            was doing this project because everything will new for me. But I
+            decided to never give up at any cost. So I completed this project
+            nicely. After completion I enjoyed the achivement and I got a lot of
+            confidence to face new challenges.
             <br />
             Node js, Express js, HTML, CSS, HBS, MYSQL are the mainly used tech
             stack in this project..
@@ -78,7 +78,7 @@ const Projects = () => {
             Logus is my second full stack project. Logus is a social media app
             that offers user can post content, likes, delete the post. Mainly
             Logus offers google authentication for users and I used JWT for
-            working great my authentication. In this project i completed full
+            working great my authentication. In this project I completed full
             authentication process with forgot and reset password using email
             verification. I managed state using REDUX JS
             <br />
@@ -121,10 +121,10 @@ const Projects = () => {
         <div>
           <p className={styles.title}>Netflix clone , API consumption,</p>
           <p className={styles.content}>
-            In my free time i watch some series and movies in Netflix. So i
+            In my free time I watch some series and movies in Netflix. So I
             decided to clone Netflix. It was an awesome journey with React. I am
             really learned a lot from this project React components, State, Prop
-            and so on. I managed data through consuming TMDB API, and i used
+            and so on. I managed data through consuming TMDB API, and I used
             Axios for handling API requests. We can watch movie trailers in this
             app.
           </p>
