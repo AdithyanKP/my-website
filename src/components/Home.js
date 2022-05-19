@@ -45,7 +45,8 @@ const Home = () => {
             <p
               style={{
                 padding: 12,
-                fontSize: 25,
+                fontSize: 28,
+                fontFamily: "'Gudea', sans-serif",
                 color: "#bfbfbf",
                 fontWeight: "bold",
               }}
@@ -119,7 +120,7 @@ const Home = () => {
           >
             <Tab style={{ color: "#262626" }} label="Projects" />
             <Tab style={{ color: "#262626" }} label="Skills" />
-            <Tab style={{ color: "#262626" }} label="Blog" />
+            <Tab style={{ color: "#262626" }} label="Blog" disabled />
           </Tabs>
         </Paper>
       </div>

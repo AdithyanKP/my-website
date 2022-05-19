@@ -11,7 +11,7 @@
 .para {
   display: flex;
   text-align:initial;
-  font-size: 34px;
+  font-size: 30px;
  font-family:'Gudea', sans-serif;
  align-items: center;
  color:#bfbfbf;
@@ -57,10 +57,10 @@ justify-content: center;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
- margin-right: 50px;
- margin-left: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+ margin-right: 180px;
+ margin-left: 180px;
  
 
 }
