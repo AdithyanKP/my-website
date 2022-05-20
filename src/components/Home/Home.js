@@ -9,7 +9,6 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import { IconButton } from "@mui/material";
 
-import Paper from "@material-ui/core/Paper";
 import Tab from "@material-ui/core/Tab";
 import Tabs from "@material-ui/core/Tabs";
 import Skill from "../Skill/Skill";
@@ -108,21 +107,19 @@ const Home = () => {
           justifyContent: "center",
         }}
       >
-        <Paper square>
-          <Tabs
-            value={value}
-            textColor="primary"
-            indicatorColor="primary"
-            centered
-            onChange={(event, newValue) => {
-              setValue(newValue);
-            }}
-          >
-            <Tab style={{ color: "#262626" }} label="Projects" />
-            <Tab style={{ color: "#262626" }} label="Skills" />
-            <Tab style={{ color: "#262626" }} label="Blog" disabled />
-          </Tabs>
-        </Paper>
+        <Tabs
+          value={value}
+          textColor="primary"
+          indicatorColor="primary"
+          centered
+          onChange={(event, newValue) => {
+            setValue(newValue);
+          }}
+        >
+          <Tab style={{ color: "#262626" }} label="Projects" />
+          <Tab style={{ color: "#262626" }} label="Skills" />
+          <Tab style={{ color: "#262626" }} label="Blog" disabled />
+        </Tabs>
       </div>
       <div style={{ marginLeft: 20, marginRight: 20 }}>{renderCompoent()}</div>
     </>

@@ -1,14 +1,62 @@
 import React from "react";
 import styles from "./Skill.module.css";
+import { Paper, Typography } from "@mui/material";
 const Skill = () => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.text}>React Js ✔</h1>
-      <h1 className={styles.text}>React Native ✔</h1>
-      <h1 className={styles.text}>Redux js ✔</h1>
-      <h1 className={styles.text}>Node Js ✔</h1>
-      <h1 className={styles.text}>Javascript ✔</h1>
-      <h1 className={styles.text}>Git ✔</h1>
+      <div className={styles.layoutOne}>
+        <div className={styles.child}>
+          <Paper round>
+            <Typography className={styles.typo}>React js</Typography>
+          </Paper>
+        </div>
+        <div className={styles.child}>
+          <Paper round>
+            <Typography className={styles.typo}>React Native</Typography>
+          </Paper>
+        </div>
+        <div className={styles.child}>
+          <Paper round>
+            <Typography className={styles.typo}>Javascript</Typography>
+          </Paper>
+        </div>
+        <div className={styles.child}>
+          <Paper round>
+            <Typography className={styles.typo}>Redux Js</Typography>
+          </Paper>
+        </div>
+      </div>
+
+      <div className={styles.layoutTwo}>
+        <div className={styles.child}>
+          <Paper round>
+            <Typography className={styles.typo}>Jest</Typography>
+          </Paper>
+        </div>
+        <div className={styles.child}>
+          <Paper round>
+            <Typography className={styles.typo}>Node Js</Typography>
+          </Paper>
+        </div>
+        <div className={styles.child}>
+          <Paper round>
+            <Typography className={styles.typo}>MySql</Typography>
+          </Paper>
+        </div>
+        <div className={styles.child}>
+          <Paper round>
+            <Typography className={styles.typo}>MongoDB</Typography>
+          </Paper>
+        </div>
+      </div>
+
+      <div className={styles.layoutTwo}>
+        <div className={styles.child}>
+          <Paper round>
+            <Typography className={styles.typo}>Git</Typography>
+          </Paper>
+        </div>
+      </div>
     </div>
   );
 };
