@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Home.module.css";
 
-import Projects from "./Projects/Projects";
+import Projects from "../Projects/Projects";
 
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -12,7 +12,7 @@ import { IconButton } from "@mui/material";
 import Paper from "@material-ui/core/Paper";
 import Tab from "@material-ui/core/Tab";
 import Tabs from "@material-ui/core/Tabs";
-import Skill from "./Skill";
+import Skill from "../Skill/Skill";
 
 const Home = () => {
   const [value, setValue] = useState(0);

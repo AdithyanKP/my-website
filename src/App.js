@@ -1,9 +1,9 @@
 import React from "react";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
-import Skill from "./components/Skill";
-import Footer from "./components/footer";
+import Home from "./components/Home/Home";
+import Skill from "./components/Skill/Skill";
+import Footer from "./components/Footer/footer";
 
 const App = () => {
   return (
