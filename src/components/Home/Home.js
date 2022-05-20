@@ -99,27 +99,30 @@ const Home = () => {
           </div>
           {/*    <img className={styles.animation} src={animation} alt=""></img> */}
         </div>
-      </div>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "center",
-        }}
-      >
-        <Tabs
-          value={value}
-          textColor="primary"
-          indicatorColor="primary"
-          centered
-          onChange={(event, newValue) => {
-            setValue(newValue);
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignSelf: "center",
           }}
         >
-          <Tab style={{ color: "#262626" }} label="Projects" />
-          <Tab style={{ color: "#262626" }} label="Skills" />
-          <Tab style={{ color: "#262626" }} label="Blog" disabled />
-        </Tabs>
+          <div style={{ backgroundColor: "#262626", width: "100%" }}>
+            <Tabs
+              value={value}
+              textColor="inherit"
+              indicatorColor="green"
+              centered
+              onChange={(event, newValue) => {
+                setValue(newValue);
+              }}
+            >
+              <Tab className={styles.tab} label="Projects" />
+              <Tab className={styles.tab} label="Skills" />
+              <Tab className={styles.tab} label="Blog" disabled />
+            </Tabs>
+          </div>
+        </div>
       </div>
       <div style={{ marginLeft: 20, marginRight: 20 }}>{renderCompoent()}</div>
     </>

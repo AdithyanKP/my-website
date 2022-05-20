@@ -4,7 +4,7 @@
   margin-top: 0px;
   align-items: flex-start;
   justify-content: flex-start;
-  padding-bottom: 35px;
+  padding-bottom: 0px;
   
   background-color: #262626;
 }
@@ -71,6 +71,11 @@ justify-content: center;
 }
 .title{
   margin-left: 50px;
+}
+.tab{
+  color: white;
+  font-size: 18px;
+  font-family:'Gudea', sans-serif ;
 }
 
 
