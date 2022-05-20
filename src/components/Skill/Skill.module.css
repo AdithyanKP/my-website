@@ -55,6 +55,11 @@ animation-name: slidein; /*simple  animation implemented */
     
     padding-bottom: 10px;
   }
+  .layoutTwo{
+  
+    
+    padding-bottom: 10px;
+  }
   .child{
     padding: 4px;
   }
