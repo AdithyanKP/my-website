@@ -79,9 +79,9 @@ animation-name: slidein; /*simple  animation implemented */
     font-size: 12px;
   }
 }
-@media (max-width: 365px) {
+@media (max-width: 377px) {
   .child{
-    padding: 2px;
+    padding: 1.2px;
   
   }
   .typo{

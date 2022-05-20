@@ -53,6 +53,11 @@ const Skill = () => {
       <div className={styles.layoutTwo}>
         <div className={styles.child}>
           <Paper round>
+            <Typography className={styles.typo}>Express js</Typography>
+          </Paper>
+        </div>
+        <div className={styles.child}>
+          <Paper round>
             <Typography className={styles.typo}>Git</Typography>
           </Paper>
         </div>
