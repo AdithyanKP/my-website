@@ -117,13 +117,27 @@ const Home = () => {
                 setValue(newValue);
               }}
             >
-              <Tab className={styles.tab} label="Projects" />
-              <Tab className={styles.tab} label="Skills" />
-              <Tab className={styles.tab} label="Blog" disabled />
+              <Tab
+                className={styles.tab}
+                style={{ color: "white", fontSize: 16 }}
+                label="Projects"
+              />
+              <Tab
+                className={styles.tab}
+                style={{ color: "white", fontSize: 16 }}
+                label="Skills"
+              />
+              <Tab
+                className={styles.tab}
+                style={{ color: "white", fontSize: 16 }}
+                label="Blog"
+                disabled
+              />
             </Tabs>
           </div>
         </div>
       </div>
+
       <div style={{ marginLeft: 20, marginRight: 20 }}>{renderCompoent()}</div>
     </>
   );
