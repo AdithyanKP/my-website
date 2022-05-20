@@ -76,7 +76,7 @@ animation-name: slidein; /*simple  animation implemented */
 }
 @media (max-width: 365px) {
   .child{
-    padding: 1.2px;
+    padding: 2px;
   
   }
   .typo{
