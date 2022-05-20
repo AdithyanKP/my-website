@@ -16,7 +16,7 @@ const Projects = () => {
   return (
     <div className={styles.container}>
       {/*    E-plant project */}
-      <div className={styles.imagecontainer}>
+      <div className={styles.itemcontainer}>
         <div>
           <p className={styles.title} style={{ marginTop: 30 }}>
             E-Plant Server-Side web application, E-Commerce
@@ -52,7 +52,6 @@ const Projects = () => {
 
           <div className={styles.a}>
             <Button
-              /* variant="info" */
               style={{
                 color: "white",
                 backgroundColor: "#262626",
@@ -68,8 +67,8 @@ const Projects = () => {
         </div>
       </div>
 
-      {/* covid -19 Tracker */}
-      <div className={styles.imagecontainer}>
+      {/* logus */}
+      <div className={styles.itemcontainer}>
         <div>
           <p className={styles.title}>
             Logus SocialMedia application,Fully Featured Authentication
@@ -117,7 +116,7 @@ const Projects = () => {
       </div>
 
       {/* Netflix-clone */}
-      <div className={styles.imagecontainer}>
+      <div className={styles.itemcontainer}>
         <div>
           <p className={styles.title}>Netflix clone , API consumption,</p>
           <p className={styles.content}>
@@ -157,7 +156,7 @@ const Projects = () => {
       </div>
 
       {/* Todo app */}
-      <div className={styles.imagecontainer}>
+      <div className={styles.itemcontainer}>
         <div>
           <p className={styles.title}>Todo App </p>
           <p className={styles.content}>
