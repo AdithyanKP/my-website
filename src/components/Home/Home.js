@@ -41,17 +41,7 @@ const Home = () => {
           }}
         >
           <div className={styles.title}>
-            <p
-              style={{
-                padding: 12,
-                fontSize: 28,
-                fontFamily: "'Gudea', sans-serif",
-                color: "#bfbfbf",
-                fontWeight: "bold",
-              }}
-            >
-              ADITHYAN KP
-            </p>
+            <p className={styles.titleText}>ADITHYAN KP</p>
           </div>
 
           <div className={styles.icon}>
