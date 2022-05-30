@@ -155,7 +155,7 @@ const Projects = () => {
         </Button>
       </div>
 
-      {/* Netflix-clone */}
+      {/* Notes app */}
       <div className={styles.itemcontainer}>
         <div>
           <p className={styles.title}>Notes App</p>
