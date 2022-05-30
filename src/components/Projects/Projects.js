@@ -155,6 +155,42 @@ const Projects = () => {
         </Button>
       </div>
 
+      {/* Netflix-clone */}
+      <div className={styles.itemcontainer}>
+        <div>
+          <p className={styles.title}>Notes App</p>
+          <p className={styles.content}>
+            web application to write down my notes. I store my notes in Local
+            storage. In this website supportes Dark mode and We can search our
+            notes. Click the below button and create your own notes.
+          </p>
+        </div>
+      </div>
+
+      <div className={styles.gitcontainer}>
+        <a className={styles.langgit} href={react}>
+          react js
+        </a>
+        <a className={styles.langgit} href={javascript}>
+          javascript
+        </a>
+      </div>
+
+      <div className={styles.a}>
+        <Button
+          style={{
+            color: "white",
+            backgroundColor: "#262626",
+            border: "none",
+            borderRadius: 8,
+            padding: 5,
+          }}
+          href="https://notezze.netlify.app/"
+        >
+          View Demo
+        </Button>
+      </div>
+
       {/* Todo app */}
       <div className={styles.itemcontainer}>
         <div>
