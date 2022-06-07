@@ -250,7 +250,7 @@ const Projects = () => {
         <a className={styles.langgit} href={javascript}>
           javascript
         </a>
-        <span className={styles.langgit}>local storage</span>
+        <span className={styles.langgit}>Axios</span>
       </div>
 
       <div className={styles.a}>
