@@ -236,7 +236,9 @@ const Projects = () => {
             We can refer the covid-19 live updates with filter by specific
             countries also the global Details. I integrated the chart to View
             the information more effectivly. I used two different types of chart
-            ui one of them is barChart and the otherone is Line chart.
+            ui one of them is barChart and the otherone is Line chart. this app
+            will provide realtime solid information to the end user. I collected
+            the data via api consumption.
           </p>
         </div>
       </div>
