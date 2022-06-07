@@ -228,6 +228,43 @@ const Projects = () => {
         </Button>
       </div>
 
+      {/* Covid -19 tracker */}
+      <div className={styles.itemcontainer}>
+        <div>
+          <p className={styles.title}>Todo App </p>
+          <p className={styles.content}>
+            Basic Todo App, it was used to write daily todo tasks. we can mark
+            completed todo ontime and also we can remove. this app fully
+            responsive and deliver better user experience.
+          </p>
+        </div>
+      </div>
+
+      <div className={styles.gitcontainer}>
+        <a className={styles.langgit} href={react}>
+          react js
+        </a>
+        <a className={styles.langgit} href={javascript}>
+          javascript
+        </a>
+        <span className={styles.langgit}>local storage</span>
+      </div>
+
+      <div className={styles.a}>
+        <Button
+          style={{
+            color: "white",
+            backgroundColor: "#262626",
+            border: "none",
+            borderRadius: 8,
+            padding: 5,
+          }}
+          href="https://todo-app-adithyan.netlify.app/"
+        >
+          View Demo
+        </Button>
+      </div>
+
       <div
         style={{
           display: "flex",
