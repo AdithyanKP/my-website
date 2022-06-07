@@ -231,11 +231,12 @@ const Projects = () => {
       {/* Covid -19 tracker */}
       <div className={styles.itemcontainer}>
         <div>
-          <p className={styles.title}>Todo App </p>
+          <p className={styles.title}>Covid-19 Live Tracker</p>
           <p className={styles.content}>
-            Basic Todo App, it was used to write daily todo tasks. we can mark
-            completed todo ontime and also we can remove. this app fully
-            responsive and deliver better user experience.
+            We can refer the covid-19 live updates with filter by specific
+            countries also the global Details. I integrated the chart to View
+            the information more effectivly. I used two different types of chart
+            ui one of them is barChart and the otherone is Line chart.
           </p>
         </div>
       </div>
