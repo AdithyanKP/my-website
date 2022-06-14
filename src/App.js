@@ -13,8 +13,6 @@ const App = () => {
         <Route exact strict path="/" element={<Home />} />
         <Route exact strict path="/skills" element={<Skill />} />
       </Routes>
-
-      {/* <SocialLink /> */}
       <Footer />
     </Router>
   );

@@ -87,7 +87,6 @@ const Home = () => {
               <br /> I've completed my BCA Graduation in 2018-2021.
             </p>
           </div>
-          {/*    <img className={styles.animation} src={animation} alt=""></img> */}
         </div>
         <div
           style={{
