@@ -8,7 +8,6 @@ import Footer from "./components/Footer/footer";
 const App = () => {
   return (
     <Router>
-      {/*  <Navibar /> */}
       <Routes>
         <Route exact strict path="/" element={<Home />} />
         <Route exact strict path="/skills" element={<Skill />} />
