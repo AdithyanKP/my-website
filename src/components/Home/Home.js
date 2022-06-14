@@ -102,6 +102,7 @@ const Home = () => {
               textColor="inherit"
               indicatorColor="green"
               centered
+              //the newValue will be the index verify metirial ui core tabs doc
               onChange={(event, newValue) => {
                 setValue(newValue);
               }}
