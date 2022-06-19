@@ -11,8 +11,8 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
- // animation-duration: 1.3s;
- // animation-name: slidein; /*simple  animation implemented */
+  /* animation-duration: 1.3s;
+  animation-name: slidein; */ /*simple  animation implemented */
 }
 @keyframes slidein {
   from {
@@ -84,8 +84,8 @@
   position: relative;
   
   font-family:'Gudea', sans-serif;
-  //animation-duration: 1.3s;
-//animation-name: slidein; /*simple  animation implemented */
+  /* //animation-duration: 1.3s;
+//animation-name: slidein; */ /*simple  animation implemented */
   
 }
 @keyframes slidein {
@@ -107,8 +107,8 @@
   margin-bottom: 18px;
   margin-top: 10px;
   font-family:'Gudea', sans-serif;
- // animation-duration: 1.3s;
-//animation-name: slidein; /*simple  animation implemented */
+ /* // animation-duration: 1.3s;
+//animation-name: slidein; */ /*simple  animation implemented */
 }
 @keyframes slidein {
   from {
@@ -135,8 +135,8 @@
   align-items: center;
   font-size: 18px;
   color: #7b7b7b;
-  //animation-duration: 1.3s;
-//animation-name: slidein; /*simple  animation implemented */
+  /* //animation-duration: 1.3s;
+//animation-name: slidein; */ /*simple  animation implemented */
   
 }
 @keyframes slidein {
