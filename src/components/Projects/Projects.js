@@ -262,7 +262,7 @@ const Projects = () => {
             borderRadius: 8,
             padding: 5,
           }}
-          href="https://todo-app-adithyan.netlify.app/"
+          href="https://adithyan-covid-19-tracker.netlify.app/"
         >
           View Demo
         </Button>
