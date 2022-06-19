@@ -4,8 +4,8 @@
   justify-content: center;
   margin-top: 80px;
   margin-bottom: 80px;
-  animation-duration: 1s;
-animation-name: slidein; /*simple  animation implemented */
+ /*  animation-duration: 1s;
+animation-name: slidein;  *//*simple  animation implemented */
 }
 
 @keyframes slidein {
