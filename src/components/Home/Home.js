@@ -50,7 +50,7 @@ const Home = () => {
               onClick={() => window.open("https://github.com/AdithyanKP/")}
             >
               <GitHubIcon
-                fontSize="large"
+                fontSize="medium"
                 style={{ color: "#bfbfbf", padding: 2, fontSize: 42 }}
               />
             </IconButton>
@@ -61,7 +61,7 @@ const Home = () => {
               }
             >
               <LinkedInIcon
-                fontSize="large"
+                fontSize="medium"
                 style={{ color: "#bfbfbf", padding: 2, fontSize: 42 }}
               />
             </IconButton>
@@ -70,7 +70,7 @@ const Home = () => {
               onClick={() => window.open("https://twitter.com/adithyanKP_")}
             >
               <TwitterIcon
-                fontSize="large"
+                fontSize="medium"
                 style={{ color: "#bfbfbf", padding: 2, fontSize: 42 }}
               />
             </IconButton>
