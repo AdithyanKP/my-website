@@ -51,7 +51,7 @@ const Home = () => {
             >
               <GitHubIcon
                 fontSize="medium"
-                style={{ color: "#bfbfbf", padding: 2, fontSize: 42 }}
+                style={{ color: "#bfbfbf", padding: 2, fontSize: 35 }}
               />
             </IconButton>
             <IconButton
@@ -62,7 +62,7 @@ const Home = () => {
             >
               <LinkedInIcon
                 fontSize="medium"
-                style={{ color: "#bfbfbf", padding: 2, fontSize: 42 }}
+                style={{ color: "#bfbfbf", padding: 2, fontSize: 35 }}
               />
             </IconButton>
             <IconButton
@@ -71,7 +71,7 @@ const Home = () => {
             >
               <TwitterIcon
                 fontSize="medium"
-                style={{ color: "#bfbfbf", padding: 2, fontSize: 42 }}
+                style={{ color: "#bfbfbf", padding: 2, fontSize: 35 }}
               />
             </IconButton>
           </div>
