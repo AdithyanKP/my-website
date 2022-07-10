@@ -82,9 +82,7 @@ const Home = () => {
             <p className={styles.para}>
               Hi there..
               <br /> I am a Full Stack React Developer.
-              <br /> Currently work as a Software Engineer at Infospica
-              consultancy and services.
-              <br /> I've completed my BCA Graduation in 2018-2021.
+              <br /> Currently work as a Software Engineer at NeoITO.
             </p>
           </div>
         </div>
