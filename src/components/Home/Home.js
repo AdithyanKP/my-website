@@ -82,6 +82,8 @@ const Home = () => {
             <p className={styles.para}>
               Hi there..
               <br /> I am a Full Stack React Developer.
+              <br />
+              Building things on internet that matters🌐
               <br /> Currently work as a Software Engineer at NeoITO.
             </p>
           </div>

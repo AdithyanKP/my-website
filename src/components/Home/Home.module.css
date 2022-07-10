@@ -11,7 +11,7 @@
 .para {
   display: flex;
   text-align:initial;
-  font-size: 23px;
+  font-size: 28px;
  font-family:'Gudea', sans-serif;
  align-items: center;
  color:#bfbfbf;
@@ -71,6 +71,7 @@ justify-content: center;
 }
 .title{
   margin-left: 50px;
+ 
 }
 .tab{
   color:white;
