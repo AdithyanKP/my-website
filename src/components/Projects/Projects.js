@@ -22,10 +22,11 @@ const Projects = () => {
             E-Plant Server-Side web application, E-Commerce
           </p>
           <p className={styles.content}>
-            E-Plant is an ecommerce application for users can buy indoor plants
-            and pots Both online and offline, Admin can access the product
-            details, order details, user details, order manegement and so on. In
-            this application offered better security help of Bcrypt library.
+            E-Plant is an ecommerce application for+- users can buy indoor
+            plants and pots Both online and offline, Admin can access the
+            product details, order details, user details, order manegement and
+            so on. In this application offered better security help of Bcrypt
+            library.
             <br /> E-Plant is one of my memorable projects I was done. First
             full stack project in my career. Iam really feeling stressed when I
             was doing this project because everything will new for me. But I
