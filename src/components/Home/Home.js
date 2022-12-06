@@ -81,7 +81,7 @@ const Home = () => {
           <div className={styles.miniLayoutOne}>
             <p className={styles.para}>
               Hi there..
-              <br /> I am a Full Stack React Developer.
+              <br /> I am a Full Stack Developer.
               <br /> Currently work as a Software Engineer at NeoITO.
             </p>
           </div>
