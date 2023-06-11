@@ -119,7 +119,6 @@ const Home = () => {
                 className={styles.tab}
                 style={{ color: "white", fontSize: 16 }}
                 label="Blog"
-                disabled
               />
             </Tabs>
           </div>
