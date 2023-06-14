@@ -22,32 +22,36 @@ const Projects = () => {
             E-Plant Server-Side web application, E-Commerce
           </p>
           <p className={styles.content}>
-            E-Plant is an ecommerce application for users can buy indoor plants
-            and pots Both online and offline, Admin can access the product
-            details, order details, user details, order manegement and so on. In
-            this application offered better security help of Bcrypt library.
-            <br /> E-Plant is one of my memorable projects I was done. First
-            full stack project in my career. Iam really feeling stressed when I
-            was doing this project because everything will new for me. But I
-            decided to never give up at any cost. So I completed this project
-            nicely. After completion I enjoyed the achivement and I got a lot of
-            confidence to face new challenges.
+            "E-Plant is an e-commerce application that enables users to purchase
+            indoor plants and pots both online and offline. The application also
+            provides the admin with access to product details, order details,
+            user information, and order management. Enhanced security is
+            implemented in this application with the help of the Bcrypt
+            library."
+            <br /> "E-Plant is one of the most memorable projects I have
+            completed, marking my first full-stack project in my career. I
+            initially experienced a sense of stress due to the newness of
+            everything involved. However, I made a firm commitment to persevere
+            at all costs. As a result, I successfully completed the project with
+            excellence. After its completion, I felt a great sense of
+            achievement and gained a significant boost in confidence to tackle
+            future challenges."
             <br />
             Node js, Express js, HTML, CSS, HBS, MYSQL are the mainly used tech
             stack in this project..
           </p>
 
           <div className={styles.gitcontainer}>
-            <a className={styles.langgit} href={nodejs}>
+            <a className={styles.lang_box} href={nodejs}>
               node js
             </a>
-            <a className={styles.langgit} href={mysql}>
+            <a className={styles.lang_box} href={mysql}>
               mySql
             </a>
-            <a className={styles.langgit} href={javascript}>
+            <a className={styles.lang_box} href={javascript}>
               javascript
             </a>
-            <span className={styles.langgit}>express js</span>
+            <span className={styles.lang_box}>express js</span>
           </div>
 
           <div className={styles.a}>
@@ -74,26 +78,30 @@ const Projects = () => {
             Logus SocialMedia application,Fully Featured Authentication
           </p>
           <p className={styles.content}>
-            Logus is my second full stack project. Logus is a social media app
-            that offers user can post content, likes, delete the post. Mainly
-            Logus offers google authentication for users and I used JWT for
-            working great my authentication. In this project I completed full
-            authentication process with forgot and reset password using email
-            verification. I managed state using REDUX JS
+            "Logus is my second full-stack project, a social media app that
+            allows users to create and share content, like posts, and delete
+            their own posts. One of the prominent features of Logus is the
+            integration of Google authentication, providing a seamless login
+            experience for users. I implemented JWT (JSON Web Tokens) for robust
+            authentication functionality, ensuring secure user sessions.
+            Additionally, I successfully implemented the entire authentication
+            process, including forgot and reset password functionalities with
+            email verification. To manage the application state effectively, I
+            utilized Redux JS."
             <br />
             React js , Redux js,MUI, Node js, Express Js, Mongoose are the main
             tech stack of this project.
           </p>
 
           <div className={styles.gitcontainer}>
-            <a className={styles.langgit} href={nodejs}>
+            <a className={styles.lang_box} href={nodejs}>
               node js
             </a>
-            <a className={styles.langgit} href={react}>
+            <a className={styles.lang_box} href={react}>
               react js
             </a>
-            <span className={styles.langgit}>express js</span>
-            <a className={styles.langgit} href={mongoose}>
+            <span className={styles.lang_box}>express js</span>
+            <a className={styles.lang_box} href={mongoose}>
               mongoose
             </a>
           </div>
@@ -120,24 +128,26 @@ const Projects = () => {
         <div>
           <p className={styles.title}>Netflix clone , API consumption,</p>
           <p className={styles.content}>
-            In my free time I watch some series and movies in Netflix. So I
-            decided to clone Netflix. It was an awesome journey with React. I am
-            really learned a lot from this project React components, State, Prop
-            and so on. I managed data through consuming TMDB API, and I used
-            Axios for handling API requests. We can watch movie trailers in this
-            app.
+            "In my free time, I enjoy watching series and movies on Netflix.
+            Inspired by this experience, I embarked on a journey to clone
+            Netflix using React. It proved to be an incredible learning
+            opportunity, allowing me to deepen my understanding of React
+            components, state management, props, and more. To fetch and handle
+            data, I leveraged the TMDB API, utilizing Axios for seamless API
+            requests. As a result, the app enables users to watch movie trailers
+            alongside other functionalities."
           </p>
         </div>
       </div>
 
       <div className={styles.gitcontainer}>
-        <a className={styles.langgit} href={react}>
+        <a className={styles.lang_box} href={react}>
           react js
         </a>
-        <a className={styles.langgit} href={javascript}>
+        <a className={styles.lang_box} href={javascript}>
           javascript
         </a>
-        <span className={styles.langgit}>axios</span>
+        <span className={styles.lang_box}>axios</span>
       </div>
 
       <div className={styles.a}>
@@ -160,18 +170,22 @@ const Projects = () => {
         <div>
           <p className={styles.title}>Notes App</p>
           <p className={styles.content}>
-            web application to write down my notes. I store my notes in Local
-            storage. In this website supportes Dark mode and We can search our
-            notes. Click the below button and create your own notes.
+            "This web application serves as a platform for writing and
+            organizing personal notes. The notes are conveniently stored in the
+            local storage of the user's device. The website offers support for
+            Dark mode, providing a comfortable reading experience in low-light
+            environments. Additionally, users can easily search through their
+            notes for quick access to specific information. Click the button
+            below to start creating your own notes."
           </p>
         </div>
       </div>
 
       <div className={styles.gitcontainer}>
-        <a className={styles.langgit} href={react}>
+        <a className={styles.lang_box} href={react}>
           react js
         </a>
-        <a className={styles.langgit} href={javascript}>
+        <a className={styles.lang_box} href={javascript}>
           javascript
         </a>
       </div>
@@ -196,21 +210,23 @@ const Projects = () => {
         <div>
           <p className={styles.title}>Todo App </p>
           <p className={styles.content}>
-            Basic Todo App, it was used to write daily todo tasks. we can mark
-            completed todo ontime and also we can remove. this app fully
-            responsive and deliver better user experience.
+            "The Basic Todo App serves as a handy tool for jotting down daily
+            tasks. Users can effortlessly mark completed tasks on time and
+            remove them as needed. This fully responsive app delivers an
+            enhanced user experience, adapting seamlessly to different screen
+            sizes and ensuring optimal usability."
           </p>
         </div>
       </div>
 
       <div className={styles.gitcontainer}>
-        <a className={styles.langgit} href={react}>
+        <a className={styles.lang_box} href={react}>
           react js
         </a>
-        <a className={styles.langgit} href={javascript}>
+        <a className={styles.lang_box} href={javascript}>
           javascript
         </a>
-        <span className={styles.langgit}>local storage</span>
+        <span className={styles.lang_box}>local storage</span>
       </div>
 
       <div className={styles.a}>
@@ -233,24 +249,25 @@ const Projects = () => {
         <div>
           <p className={styles.title}>Covid-19 Live Tracker</p>
           <p className={styles.content}>
-            We can refer the covid-19 live updates with filter by specific
-            countries also the global Details. I integrated the chart to View
-            the information more effectivly. I used two different types of chart
-            ui one of them is barChart and the otherone is Line chart. this app
-            will provide realtime solid information to the end user. I collected
-            the data via api consumption.
+            "Our application provides live updates on COVID-19, allowing users
+            to filter information by specific countries as well as view global
+            details. To enhance data visualization, we integrated two types of
+            chart UI: bar charts and line charts. These charts enable users to
+            grasp information more effectively and make informed decisions. The
+            app ensures real-time and reliable information, as we collect data
+            through API consumption."
           </p>
         </div>
       </div>
 
       <div className={styles.gitcontainer}>
-        <a className={styles.langgit} href={react}>
+        <a className={styles.lang_box} href={react}>
           react js
         </a>
-        <a className={styles.langgit} href={javascript}>
+        <a className={styles.lang_box} href={javascript}>
           javascript
         </a>
-        <span className={styles.langgit}>Axios</span>
+        <span className={styles.lang_box}>Axios</span>
       </div>
 
       <div className={styles.a}>
