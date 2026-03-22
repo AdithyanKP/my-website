@@ -1,10 +1,11 @@
 .container {
   display: flex;
   flex-direction: row;
-justify-content:center ;
+  justify-content:center ;
   align-items: flex-end;
   margin-bottom: 0px;
-  background-color:white;;
+  background-color:white;
+  padding: 18px 16px 24px;
 }
 .text {
   font-size: 13px;

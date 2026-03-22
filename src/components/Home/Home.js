@@ -5,6 +5,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { IconButton } from "@mui/material";
 import awardImage from "../../assets/team_player_award.jfif";
+import resumePdf from "../../assets/AdithyanKP_Resume_2026_4yrs.pdf";
 
 const experience = [
   {
@@ -114,16 +115,12 @@ const Home = () => {
             Adithyan <span className={styles.highlight}>KP</span>
           </h1>
           <p className={styles.heroLead}>
-            I design and ship scalable full-stack systems across consumer platforms,
-            enterprise tooling, and conversational products, always aligning deliveries
-            with measurable business outcomes.
+            I design and ship scalable full-stack systems across consumer
+            platforms, enterprise tooling, and conversational products, always
+            aligning deliveries with measurable business outcomes.
           </p>
           <div className={styles.heroActions}>
-            <a
-              className={styles.primaryCta}
-              href="/AdithyanKP_Resume_2026_4yrs.pdf"
-              download
-            >
+            <a className={styles.primaryCta} href={resumePdf} download>
               Download resume
             </a>
             <a
@@ -290,9 +287,7 @@ const Home = () => {
               <button
                 type="button"
                 className={styles.copyButton}
-                onClick={() =>
-                  copyValue("adithyan.k.p777@gmail.com", "email")
-                }
+                onClick={() => copyValue("adithyan.k.p777@gmail.com", "email")}
               >
                 {copied === "email" ? "Copied" : "Copy"}
               </button>
