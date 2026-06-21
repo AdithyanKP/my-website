@@ -5,7 +5,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { IconButton } from "@mui/material";
 import awardImage from "../../assets/team_player_award.jfif";
-import resumePdf from "../../assets/AdithyanKP_Resume_2026_4yrs.pdf";
+import resumePdf from "../../assets/Adithyan_KP_RESUME.pdf";
 
 const experience = [
   {
@@ -40,6 +40,24 @@ const projects = [
     stack: ["React", "Node", "Express", "PostgreSQL"],
     link: "https://happilee.io",
     ctaLabel: "View Live",
+  },
+  {
+    name: "Mentorship Platform",
+    tagline: "Mentor-led learning and skill progression",
+    description:
+      "Scalable mentorship and skill-development platform with learning groups, structured roadmaps, milestone-based progress tracking, user management, collaboration, and workflow features.",
+    stack: ["React", "Node", "PostgreSQL", "AWS EC2"],
+    link: "https://github.com/AdithyanKP/",
+    ctaLabel: "View GitHub",
+  },
+  {
+    name: "Real-time Drone Fleet Monitoring Dashboard",
+    tagline: "Live telemetry and fleet operations dashboard",
+    description:
+      "Realtime telemetry pipeline with a backend simulator, Redis Pub/Sub fanout, websocket subscription routing, state hydration, patch-based frontend updates, simulator control APIs, and health checks.",
+    stack: ["React", "Node", "Redis", "WebSocket"],
+    link: "https://github.com/AdithyanKP/",
+    ctaLabel: "View GitHub",
   },
   {
     name: "AppBlocks",

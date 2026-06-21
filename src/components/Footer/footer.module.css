@@ -4,15 +4,16 @@
   justify-content:center ;
   align-items: flex-end;
   margin-bottom: 0px;
-  background-color:white;
+  background-color:#f7f7f5;
   padding: 18px 16px 24px;
+  border-top: 1px solid #d9d9d6;
 }
 .text {
   font-size: 13px;
   margin-top:20px;
   margin-bottom: 2px;
   font-family: Arial, Helvetica, sans-serif;
-  color:#262626;
+  color:#5f6368;
   align-items: flex-end;
  
 }

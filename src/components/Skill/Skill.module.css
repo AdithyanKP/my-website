@@ -1,92 +1,60 @@
 .container {
-  flex: 1;
-  align-items: center;
-  justify-content: center;
-  margin-top: 80px;
-  margin-bottom: 80px;
- /*  animation-duration: 1s;
-animation-name: slidein;  *//*simple  animation implemented */
+  min-height: calc(100vh - 90px);
+  padding: 64px 5vw;
+  background: #f7f7f5;
+  color: #202124;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-@keyframes slidein {
-  from {
-  margin-left: 100%;
-    width: 300%;
-     }
-    to {
-     margin-left: 0%;
-   width: 100%;
-     }
-  }
+.layoutOne,
+.layoutTwo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
 
-  .layoutOne{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.child {
+  min-width: 140px;
+}
 
-  }
-  .layoutTwo{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .typo{
-    padding: 6px;
-    font-size: 20px;
-  }
-  .child{
-    padding: 10px;
-  }
+.child :global(.MuiPaper-root) {
+  border: 1px solid #d9d9d6;
+  border-radius: 8px;
+  box-shadow: none;
+  background: #ffffff;
+}
+
+.typo {
+  padding: 12px 16px;
+  font-size: 16px;
+  color: #202124;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .text {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 20px;
-  font-size: 27px;
+  font-size: 24px;
   font-weight: 700;
-  font-family:'Gudea', sans-serif;
 }
-@media (max-width: 1100px) {
 
-  .layoutOne{
-  
-    
-    padding-bottom: 10px;
+@media (max-width: 600px) {
+  .container {
+    padding: 40px 18px;
   }
-  .layoutTwo{
-  
-    
-    padding-bottom: 10px;
+
+  .child {
+    min-width: 120px;
   }
-  .child{
-    padding: 4px;
-  }
-  .typo{
-    padding: 3px;
+
+  .typo {
+    padding: 10px 12px;
     font-size: 14px;
-  }
-}
-@media (max-width: 400px) {
-  .child{
-    padding: 2px;
-    margin-left: 2px;
-  }
-  .typo{
-    padding: 2px;
-    
-    font-size: 12px;
-  }
-}
-@media (max-width: 377px) {
-  .child{
-    padding: 1.2px;
-  
-  }
-  .typo{
-    padding: 1.2px;
-    
-    font-size: 10px;
   }
 }
