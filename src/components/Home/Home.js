@@ -138,9 +138,9 @@ const Home = () => {
             aligning deliveries with measurable business outcomes.
           </p>
           <div className={styles.heroActions}>
-            <a className={styles.primaryCta} href={resumePdf} download>
+            {/* <a className={styles.primaryCta} href={resumePdf} download>
               Download resume
-            </a>
+            </a> */}
             <a
               className={styles.secondaryCta}
               href="mailto:adithyan.k.p777@gmail.com"
@@ -185,7 +185,7 @@ const Home = () => {
         </div>
         <div className={styles.heroStats}>
           <div>
-            <p className={styles.statValue}>5+</p>
+            <p className={styles.statValue}>4+</p>
             <p className={styles.statLabel}>Years shipping web platforms</p>
           </div>
           <div>
