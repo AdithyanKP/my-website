@@ -5,7 +5,6 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { IconButton } from "@mui/material";
 import awardImage from "../../assets/team_player_award.jfif";
-import resumePdf from "../../assets/Adithyan_KP_RESUME.pdf";
 
 const experience = [
   {
