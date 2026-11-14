@@ -1,11 +1,3 @@
 import React from "react";
 import styles from "./footer.module.css";
-const Footer = () => {
-  return (
-    <div className={styles.container}>
-      <h3 className={styles.text}>© Design and Developed by Adithyan K P</h3>
-    </div>
-  );
-};
-
-export default Footer;
+export default function Footer() { return <footer className={styles.footer}><span>© ADITHYAN KP</span><span>DESIGNED AS A WORKING ARCHIVE</span><a href="https://github.com/AdithyanKP/" target="_blank" rel="noreferrer">GITHUB ↗</a></footer>; }

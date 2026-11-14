@@ -1,33 +1,53 @@
-import React, { useState } from "react";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { IconButton } from "@mui/material";
+import React, { memo, useCallback, useState } from "react";
 import styles from "./Home.module.css";
-import engineerArt from "../../assets/backend-ai-engineer.png";
-import resumePdf from "../../assets/AdithyanKP_RESUME_2026.pdf";
 
-const experience = [
-  { role: "Software Engineer", company: "NeoITO", location: "Kochi, India", timeframe: "Jul 2022 — Present", bullets: ["Built a configurable low-code workflow platform with reusable nodes for Meta Cloud API, Google Sheets, webhooks, and REST integrations.", "Used RabbitMQ for asynchronous execution, scheduling, and event orchestration across 300+ businesses and 10,000+ daily customer interactions.", "Reduced publish-workflow latency by 14% through targeted performance improvements in the execution path.", "Designed LLM-based conversational agents and a multimodal RAG pipeline using LangChain, OpenAI, Qdrant, OCR, and CLIP.", "Designed an order-fulfillment pipeline that reduced processing failures by 78%, plus a serverless media pipeline on Lambda, S3, and FFmpeg."] },
-  { role: "Associate Software Engineer", company: "Infospica", location: "Remote, India", timeframe: "Nov 2021 — Jun 2022", bullets: ["Built cross-platform React Native features for Android and iOS, integrating REST APIs and reusable production components."] },
-];
 const projects = [
-  { name: "Happilee.io", tagline: "B2B customer engagement platform", description: "A business communication platform for WhatsApp engagement, AI-powered conversations, customer support, commerce, analytics, and deep third-party integrations.", stack: ["Node.js", "RabbitMQ", "LLMs", "Qdrant"], link: "https://happilee.io", ctaLabel: "View platform" },
-  { name: "Distributed Notification Platform", tagline: "Reliable asynchronous delivery", description: "RabbitMQ-based email notification service with retries, dead-letter queues, scheduled delivery, idempotency, and Redis rate limiting.", stack: ["Node.js", "RabbitMQ", "Redis", "Docker"], link: "https://github.com/AdithyanKP/", ctaLabel: "View GitHub" },
-  { name: "Appblocks", tagline: "Developer platform", description: "Backend components and APIs for standardized, reusable software blocks that accelerate consistent application development.", stack: ["Go", "APIs", "PostgreSQL", "Docker"], link: "https://www.appblocks.com/", ctaLabel: "Explore" },
+  { id: "01", title: "Workflow execution engine", type: "PRODUCT SYSTEM / 2022—NOW", summary: "A configurable runtime for turning business rules, API calls, schedules, and human handoffs into dependable workflows.", facts: ["300+ businesses", "10k+ daily interactions", "14% faster publish path"], tags: ["Node.js", "RabbitMQ", "PostgreSQL", "Redis"] },
+  { id: "02", title: "Order fulfillment pipeline", type: "RELIABILITY / BACKEND", summary: "A fault-tolerant order path designed around retries, visibility, and recovery—not the happy path.", facts: ["78% fewer failures", "async recovery", "traceable state"], tags: ["Queues", "AWS", "Webhooks", "Idempotency"] },
+  { id: "03", title: "Multimodal knowledge retrieval", type: "APPLIED AI / SEARCH", summary: "A retrieval system that combines documents, images, OCR, and LLMs into answers grounded in a company’s own knowledge.", facts: ["hybrid retrieval", "image + text", "grounded answers"], tags: ["RAG", "Qdrant", "CLIP", "LangChain"] },
 ];
-const skillGroups = [["Backend & systems", "Node.js", "TypeScript", "Go", "PostgreSQL", "Redis", "RabbitMQ", "SQS", "REST APIs"], ["AI & search", "LangChain", "OpenAI", "LLMs", "AI agents", "RAG", "Qdrant", "OCR", "CLIP"], ["Cloud & delivery", "AWS", "Lambda", "EC2", "S3", "Docker", "Nginx", "CI/CD", "PM2"]];
+const notes = [
+  { no: "CONTRIB_001", date: "WORKFLOW SYSTEMS", title: "Built the execution layer behind 10,000+ daily customer interactions", text: "Designed a configurable low-code workflow platform with reusable nodes for Meta Cloud API, Google Sheets, webhooks, and REST integrations. RabbitMQ handles asynchronous execution, scheduling, and event orchestration across 300+ businesses.", topic: "SCALE / ORCHESTRATION", outcome: "300+ BUSINESSES · 10K+ INTERACTIONS / DAY" },
+  { no: "CONTRIB_002", date: "APPLIED AI", title: "Made product knowledge searchable across text and images", text: "Designed a multimodal RAG pipeline with LangChain, OpenAI, Qdrant, OCR, and CLIP. Asynchronous ingestion through RabbitMQ improved embedding throughput and enabled AI-powered product identification; also built intent-driven conversational agents for multi-turn workflows.", topic: "RETRIEVAL / AGENTS", outcome: "TEXT + IMAGE RETRIEVAL · ASYNC INGESTION" },
+  { no: "CONTRIB_003", date: "RELIABILITY + PERFORMANCE", title: "Removed bottlenecks from data export and fulfillment paths", text: "Reduced a PostgreSQL-backed, 40,000-record contact export from approximately 10.5 seconds to 1.5 seconds through data-access and batching improvements. Built an order pipeline spanning validation, rates, processing, Shiprocket, and tracking—cutting failures by 78%.", topic: "MEASURABLE IMPROVEMENT", outcome: "~7× FASTER EXPORT · 78% FEWER FAILURES" },
+];
+const capabilities = [["01", "Backend systems", "APIs, async processing, queues, stateful workflows"], ["02", "Applied AI", "RAG, agent workflows, evaluation, multimodal retrieval"], ["03", "React interfaces", "Product-facing interfaces and reusable frontend features when the system needs them"], ["04", "Production craft", "AWS, Docker, delivery pipelines, observability"]];
+
+const ProjectCard = memo(function ProjectCard({ project }) {
+  return <article className={styles.project}><div className={styles.projectMeta}><span>{project.id}</span><span>{project.type}</span></div><div className={styles.projectBody}><h3>{project.title}</h3><p>{project.summary}</p></div><ul className={styles.facts}>{project.facts.map((fact) => <li key={fact}>{fact}</li>)}</ul><div className={styles.tags}>{project.tags.map((tag) => <span key={tag}>{tag}</span>)}</div><a className={styles.caseLink} href="mailto:adithyankp777@gmail.com?subject=Case%20study%20request">REQUEST CASE STUDY <b>↗</b></a></article>;
+});
+
+const ContributionCard = memo(function ContributionCard({ contribution }) {
+  return <article className={styles.note}><div><span>{contribution.no}</span><time>{contribution.date}</time></div><p className={styles.noteTopic}>{contribution.topic}</p><h3>{contribution.title}</h3><p>{contribution.text}</p><strong className={styles.outcome}>{contribution.outcome}</strong></article>;
+});
+
+const Capability = memo(function Capability({ item }) {
+  const [number, title, copy] = item;
+  return <div><span>{number}</span><h3>{title}</h3><p>{copy}</p></div>;
+});
 
 export default function Home() {
-  const [copied, setCopied] = useState("");
-  const copyValue = async (value, label) => { await navigator.clipboard?.writeText(value); setCopied(label); setTimeout(() => setCopied(""), 1800); };
+  const [menuOpen, setMenuOpen] = useState(false);
+  const closeMenu = useCallback(() => setMenuOpen(false), []);
+  const toggleMenu = useCallback(() => setMenuOpen((isOpen) => !isOpen), []);
   return <main className={styles.page}>
-    <div className={styles.ambient} />
-    <nav className={styles.nav}><a href="#top" className={styles.wordmark}>AK<span>/</span>SYS</a><div><a href="#work">Work</a><a href="#stack">Stack</a><a href={resumePdf} download>Résumé ↓</a></div></nav>
-    <section id="top" className={styles.hero}><div className={styles.heroCopy}><p className={styles.eyebrow}><i /> Backend engineer · distributed systems · AI</p><h1>Systems that <em>think</em>, scale, and keep moving.</h1><p className={styles.heroLead}>I’m Adithyan KP, a software engineer building event-driven backend systems and AI-powered product infrastructure. I care about reliable execution, useful intelligence, and measurable outcomes.</p><div className={styles.heroActions}><a className={styles.primaryCta} href="#work">See selected work <span>↘</span></a><a className={styles.secondaryCta} href="mailto:adithyankp777@gmail.com">Get in touch</a></div><div className={styles.socials}><IconButton aria-label="GitHub" onClick={() => window.open("https://github.com/AdithyanKP/")} className={styles.iconButton}><GitHubIcon /></IconButton><IconButton aria-label="LinkedIn" onClick={() => window.open("https://www.linkedin.com/in/adithyan-k-p/")} className={styles.iconButton}><LinkedInIcon /></IconButton></div></div><div className={styles.heroVisual}><div className={styles.systemLabel}>SYSTEMS / AI / 2026</div><img src={engineerArt} alt="Backend engineer working with distributed systems and AI" /><div className={styles.signal}><span className={styles.pulse} /> production signal<br /><b>10K+ daily interactions</b></div></div></section>
-    <section className={styles.metrics}><div><strong>4+</strong><span>years engineering products</span></div><div><strong>300+</strong><span>businesses on workflow infrastructure</span></div><div><strong>78%</strong><span>reduction in fulfillment failures</span></div></section>
-    <section id="work" className={styles.section}><header className={styles.sectionHeader}><p>01 / Production experience</p><h2>Build for the <em>real world.</em></h2></header><div className={styles.cardGrid}>{experience.map((item) => <article key={item.company} className={styles.card}><header><p className={styles.role}>{item.role}</p><h3>{item.company} <span>{item.location}</span></h3><p className={styles.timeframe}>{item.timeframe}</p></header><ul>{item.bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}</ul></article>)}</div></section>
-    <section className={`${styles.section} ${styles.projectSection}`}><header className={styles.sectionHeader}><p>02 / Selected work</p><h2>From queues to <em>intelligence.</em></h2></header><div className={styles.projectGrid}>{projects.map((project, i) => <article key={project.name} className={styles.projectCard}><div className={styles.projectNumber}>0{i + 1}</div><p className={styles.role}>{project.name}</p><h3>{project.tagline}</h3><p>{project.description}</p><div className={styles.stack}>{project.stack.map((item) => <span key={item}>{item}</span>)}</div><a href={project.link} target="_blank" rel="noreferrer">{project.ctaLabel} <b>↗</b></a></article>)}</div></section>
-    <section id="stack" className={styles.section}><header className={styles.sectionHeader}><p>03 / Technical focus</p><h2>The tools behind the <em>work.</em></h2></header><div className={styles.skillGrid}>{skillGroups.map(([title, ...items]) => <div key={title} className={styles.skillGroup}><p>{title}</p><div>{items.map((item) => <span key={item}>{item}</span>)}</div></div>)}</div></section>
-    <section className={styles.contact}><p className={styles.eyebrow}><i /> Available for meaningful systems work</p><h2>Have a hard problem?<br /><em>Let’s make it move.</em></h2><div className={styles.contactActions}><a className={styles.primaryCta} href="mailto:adithyankp777@gmail.com">adithyankp777@gmail.com <span>↗</span></a><button onClick={() => copyValue("+916238531028", "phone")}>{copied === "phone" ? "Number copied" : "+91 62385 31028"}</button></div></section>
+    <nav className={styles.nav} aria-label="Main navigation">
+      <a className={styles.mark} href="#top" onClick={closeMenu}>A<span>.</span>K</a>
+      <button className={styles.menuButton} onClick={toggleMenu} aria-expanded={menuOpen} aria-controls="site-links">{menuOpen ? "CLOSE" : "MENU"}</button>
+      <div id="site-links" className={`${styles.links} ${menuOpen ? styles.linksOpen : ""}`}><a href="#work" onClick={closeMenu}>WORK</a><a href="#notes" onClick={closeMenu}>CONTRIBUTIONS</a><a href="#about" onClick={closeMenu}>ABOUT</a></div>
+    </nav>
+    <section id="top" className={styles.hero}>
+      <p className={styles.kicker}>INDEPENDENT ENGINEERING PORTFOLIO / INDIA / 2026</p>
+      <div className={styles.heroGrid}><h1>Build<br />things that<br /><span>hold up.</span></h1><div className={styles.intro}><p>I’m <strong>Adithyan KP</strong>—a backend-first software engineer working on distributed systems, applied AI, and the infrastructure in between.</p><p>I also build product-facing interfaces with React when they help make the system useful. My focus remains the unglamorous work: failure modes, measurable improvements, and software that stays understandable as it grows.</p><a href="#work" className={styles.arrowLink}>EXPLORE SELECTED WORK <b>↓</b></a></div></div>
+      <div className={styles.signalPanel} aria-label="Current engineering focus"><span>NOW WORKING ON</span><b>reliable systems for people and products</b><i>●</i></div>
+    </section>
+    <section className={styles.manifesto}><p className={styles.sectionCode}>[ 00 / POSITION ]</p><p className={styles.largeStatement}>I make software for the moment after launch—when it needs to handle <em>load, ambiguity, and real people.</em></p></section>
+    <section id="work" className={styles.section}>
+      <header className={styles.sectionHead}><p>[ 01 / SELECTED WORK ]</p><h2>Case files</h2><span>Each project is a system, not just a screen.</span></header>
+      <div className={styles.projects}>{projects.map((project) => <ProjectCard key={project.id} project={project} />)}</div>
+    </section>
+    <section id="notes" className={`${styles.section} ${styles.notesSection}`}><header className={styles.sectionHead}><p>[ 02 / TOP CONTRIBUTIONS ]</p><h2>Engineering record</h2><span>Selected production contributions and their measurable outcomes.</span></header><div className={styles.notes}>{notes.map((contribution) => <ContributionCard key={contribution.no} contribution={contribution} />)}</div><p className={styles.noteFoot}>CONTRIBUTIONS SUMMARIZED FROM MY PROFESSIONAL EXPERIENCE. DETAILED CASE STUDIES ARE AVAILABLE ON REQUEST.</p></section>
+    <section id="about" className={`${styles.section} ${styles.about}`}><header className={styles.sectionHead}><p>[ 03 / PRACTICE ]</p><h2>What I bring</h2></header><div className={styles.capabilities}>{capabilities.map((item) => <Capability key={item[0]} item={item} />)}</div></section>
+    <section className={styles.contact}><p>[ END / START A CONVERSATION ]</p><h2>Have a system<br />worth <span>solving?</span></h2><a href="mailto:adithyankp777@gmail.com">adithyankp777@gmail.com <b>↗</b></a></section>
   </main>;
 }

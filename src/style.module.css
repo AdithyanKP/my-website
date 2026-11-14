@@ -1,11 +1,8 @@
-body{
-margin-left: 0px;
-margin-right: 0px;
+* { box-sizing: border-box; }
 
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: #101010;
 }
-@media (max-width: 800px) {
-    body{
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-  }
