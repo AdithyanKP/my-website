@@ -22,7 +22,7 @@ function JournalNav() {
 }
 
 export function JournalIndex() {
-  return <main className={styles.page}><JournalNav /><section className={styles.hero}><p>[ ENGINEERING JOURNAL / FIELD NOTES ]</p><h1>Notes from<br /><span>the workbench.</span></h1><div><p>A growing record of systems I’m learning, building, testing, and trying to understand more clearly.</p><span>{journalEntries.length.toString().padStart(2, "0")} ENTRIES / MORE TO COME</span></div></section><section className={styles.entries}>{journalEntries.map((entry) => <EntryCard key={entry.slug} entry={entry} />)}</section></main>;
+  return <main className={styles.page}><JournalNav /><section className={styles.hero}><p>[ ENGINEERING JOURNAL / FIELD NOTES ]</p><h1>Notes from<br /><span>the workbench.</span></h1><div><p>A growing record of systems I’m learning, building, testing, and trying to understand more clearly.</p><span>{journalEntries.length.toString().padStart(2, "0")} ENTRIES / MORE TO COME</span></div></section><section className={styles.entries} style={{ borderBottom: "none" }}>{journalEntries.map((entry) => <EntryCard key={entry.slug} entry={entry} />)}</section></main>;
 }
 
 function Block({ block }) {
