@@ -34,7 +34,7 @@ export default function Home() {
     <nav className={styles.nav} aria-label="Main navigation">
       <a className={styles.mark} href="#top" onClick={closeMenu}>A<span>.</span>K</a>
       <button className={styles.menuButton} onClick={toggleMenu} aria-expanded={menuOpen} aria-controls="site-links">{menuOpen ? "CLOSE" : "MENU"}</button>
-      <div id="site-links" className={`${styles.links} ${menuOpen ? styles.linksOpen : ""}`}><a href="#work" onClick={closeMenu}>WORK</a><a href="#notes" onClick={closeMenu}>CONTRIBUTIONS</a><a href="#about" onClick={closeMenu}>ABOUT</a></div>
+      <div id="site-links" className={`${styles.links} ${menuOpen ? styles.linksOpen : ""}`}><a href="#work" onClick={closeMenu}>WORK</a><a href="/journal" onClick={closeMenu}>JOURNAL</a><a href="#notes" onClick={closeMenu}>CONTRIBUTIONS</a><a href="#about" onClick={closeMenu}>ABOUT</a></div>
     </nav>
     <section id="top" className={styles.hero}>
       <p className={styles.kicker}>INDEPENDENT ENGINEERING PORTFOLIO / INDIA / 2026</p>
